@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixli — Jouw klus, snel geregeld.</title>
+  <meta name="description" content="Fixli helpt klanten snel een betrouwbare vakman te regelen. Kies je klus, vul je aanvraag in en een gescreende vakman accepteert de opdracht." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" data-page="home" aria-label="Fixli homepage">
+        <span class="navbar__logo-icon">✓</span><span>Fixli</span>
+      </a>
+      <nav class="navbar__nav" aria-label="Hoofdnavigatie">
+        <a href="#" data-page="home" class="active">Home</a>
+        <a href="#" data-page="aanvragen">Klus aanvragen</a>
+        <a href="#" data-page="vakman">Voor vakmannen</a>
+        <a href="#" data-page="over">Over ons</a>
+        <a href="#" data-page="faq">FAQ</a>
+        <a href="#" data-page="contact">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <span id="user-label" style="font-weight:700;color:var(--navy);"></span>
+        <button class="btn btn-sm btn-outline" data-open-auth>Inloggen</button>
+        <a href="#" class="btn btn-sm btn-primary" data-page="aanvragen">Klus aanvragen</a>
+        <button id="btn-logout" class="btn btn-sm btn-outline hidden">Uitloggen</button>
+      </div>
+      <button class="navbar__hamburger" aria-label="Menu openen"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="navbar__mobile-menu" aria-label="Mobiele navigatie">
+      <a href="#" data-page="home">Home</a>
+      <a href="#" data-page="aanvragen">Klus aanvragen</a>
+      <a href="#" data-page="vakman">Voor vakmannen</a>
+      <a href="#" data-page="klant-dashboard">Mijn aanvragen</a>
+      <a href="#" data-page="vakman-dashboard">Vakman dashboard</a>
+      <a href="#" data-page="admin">Admin</a>
+      <a href="#" data-page="over">Over ons</a>
+      <a href="#" data-page="faq">FAQ</a>
+      <a href="#" data-page="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="page-home" class="page active">
+      <div class="hero">
+        <div class="hero__inner">
+          <div>
+            <div class="hero__badge">Nieuw klusplatform</div>
+            <h1>Boek eenvoudig een <span>betrouwbare vakman</span></h1>
+            <p>Kies je klus, vul je aanvraag in en de eerste beschikbare gescreende vakman pakt jouw opdracht op. Geen eindeloos offertes vergelijken.</p>
+            <div class="hero__ctas">
+              <a href="#" class="btn btn-primary btn-lg" data-page="aanvragen">Klus aanvragen</a>
+              <a href="#" class="btn btn-outline-white btn-lg" data-page="vakman">Aanmelden als vakman</a>
+            </div>
+            <div class="hero__stats">
+              <div class="hero__stat"><strong>12+</strong><span>Vakgebieden</span></div>
+              <div class="hero__stat"><strong>24/7</strong><span>Aanvraag plaatsen</span></div>
+              <div class="hero__stat"><strong>100%</strong><span>Privacy tot acceptatie</span></div>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h3>Waar heeft u hulp bij nodig?</h3>
+            <div class="hero__search-group">
+              <div class="hero__select-wrap">
+                <select id="hero-vakgebied">
+                  <option value="">Kies een vakgebied</option>
+                  <option>Elektricien</option><option>Loodgieter</option><option>CV / Verwarming</option><option>Laadpaal</option>
+                  <option>Airco</option><option>Schilder</option><option>Stukadoor</option><option>Timmerman</option>
+                  <option>Hovenier</option><option>Dakdekker</option><option>Klusjesman</option><option>Witgoed monteur</option>
+                </select>
+              </div>
+              <button id="hero-search-btn" class="btn btn-primary">Start aanvraag →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header"><span class="section-label">Zo werkt Fixli</span><h2>Snel van aanvraag naar afspraak</h2><p>De klant vraagt aan, Fixli koppelt aan de juiste vakman en pas na acceptatie worden gegevens gedeeld.</p></div>
+          <div class="steps">
+            <div class="step-card"><div class="step-card__num">1</div><h3>Kies uw klus</h3><p>Selecteer het vakgebied en vertel kort wat er moet gebeuren.</p></div>
+            <div class="step-card"><div class="step-card__num">2</div><h3>Vakman accepteert</h3><p>Gescreende vakmannen zien alleen passende aanvragen in hun regio.</p></div>
+            <div class="step-card"><div class="step-card__num">3</div><h3>Klus geregeld</h3><p>Na acceptatie krijgt de vakman pas uw volledige contactgegevens.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--gray">
+        <div class="container">
+          <div class="section-header"><span class="section-label">Populair</span><h2>Populaire vakgebieden</h2></div>
+          <div class="vakgebieden-grid">
+            <div class="vakgebied-card" data-vak="Elektricien"><div class="vakgebied-card__icon">⚡</div><span>Elektricien</span></div>
+            <div class="vakgebied-card" data-vak="Loodgieter"><div class="vakgebied-card__icon">🔧</div><span>Loodgieter</span></div>
+            <div class="vakgebied-card" data-vak="CV / Verwarming"><div class="vakgebied-card__icon">🔥</div><span>CV / Verwarming</span></div>
+            <div class="vakgebied-card" data-vak="Laadpaal"><div class="vakgebied-card__icon">🔌</div><span>Laadpaal</span></div>
+            <div class="vakgebied-card" data-vak="Airco"><div class="vakgebied-card__icon">❄️</div><span>Airco</span></div>
+            <div class="vakgebied-card" data-vak="Schilder"><div class="vakgebied-card__icon">🖌️</div><span>Schilder</span></div>
+            <div class="vakgebied-card" data-vak="Stukadoor"><div class="vakgebied-card__icon">🏗️</div><span>Stukadoor</span></div>
+            <div class="vakgebied-card" data-vak="Timmerman"><div class="vakgebied-card__icon">🪚</div><span>Timmerman</span></div>
+            <div class="vakgebied-card" data-vak="Hovenier"><div class="vakgebied-card__icon">🌿</div><span>Hovenier</span></div>
+            <div class="vakgebied-card" data-vak="Dakdekker"><div class="vakgebied-card__icon">🏠</div><span>Dakdekker</span></div>
+            <div class="vakgebied-card" data-vak="Klusjesman"><div class="vakgebied-card__icon">🛠️</div><span>Klusjesman</span></div>
+            <div class="vakgebied-card" data-vak="Witgoed monteur"><div class="vakgebied-card__icon">🧺</div><span>Witgoed monteur</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="voordelen">
+            <div class="voordeel-card"><div class="voordeel-card__icon">🔒</div><div><h4>Privacy eerst</h4><p>Vakmannen zien uw volledige gegevens pas na acceptatie.</p></div></div>
+            <div class="voordeel-card"><div class="voordeel-card__icon">✅</div><div><h4>Gescreend</h4><p>Vakmannen worden gecontroleerd op KvK, ervaring en documenten.</p></div></div>
+            <div class="voordeel-card"><div class="voordeel-card__icon">⚡</div><div><h4>Snel geregeld</h4><p>De eerste geschikte vakman kan uw klus direct accepteren.</p></div></div>
+            <div class="voordeel-card"><div class="voordeel-card__icon">💬</div><div><h4>Duidelijk</h4><p>Alle informatie over uw aanvraag staat overzichtelijk bij elkaar.</p></div></div>
+          </div>
+          <div class="cta-banner mt-8">
+            <h2>Klaar om uw klus te regelen?</h2>
+            <p>Plaats gratis een aanvraag en volg de status online.</p>
+            <div class="cta-banner__btns"><a href="#" class="btn btn-primary" data-page="aanvragen">Start aanvraag</a><a href="#" class="btn btn-outline-white" data-page="vakman">Ik ben vakman</a></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="page-aanvragen" class="page form-page">
+      <div class="form-container" id="klus-form">
+        <div class="form-header"><h2>Klus aanvragen</h2><p>Vul stap voor stap uw aanvraag in.</p></div>
+        <div class="progress-bar-wrap"><div class="progress-labels"><span>Vakgebied</span><span>Klus</span><span>Info</span><span>Foto</span><span>Locatie</span><span>Contact</span><span>Overzicht</span></div><div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div></div>
+        <div class="form-body">
+          <div class="form-step active" data-step="1"><h3>Kies een vakgebied</h3><p>Waar heeft u hulp bij nodig?</p><div id="vakgebied-grid-form" class="vakgebieden-grid"></div></div>
+          <div class="form-step" data-step="2"><h3 id="klus-stap-hdr">Kies uw klus</h3><p>Selecteer de klus die het beste past.</p><div id="klus-keuze" class="vakgebieden-grid"></div></div>
+          <div class="form-step" data-step="3"><h3>Vertel kort wat er moet gebeuren</h3><p>Hoe duidelijker de omschrijving, hoe sneller een vakman kan accepteren.</p><div class="form-group"><label for="klus-beschrijving">Omschrijving</label><textarea id="klus-beschrijving" placeholder="Bijvoorbeeld: ik wil een extra groep laten plaatsen voor inductie..."></textarea></div></div>
+          <div class="form-step" data-step="4"><h3>Foto’s uploaden</h3><p>Optioneel: voeg foto’s toe van de situatie.</p><div class="upload-area"><div class="upload-area__icon">📷</div><p>Klik om foto’s toe te voegen. Demo: bestanden worden niet echt geüpload.</p><input type="file" multiple accept="image/*"></div></div>
+          <div class="form-step" data-step="5"><h3>Locatie en planning</h3><p>Vul postcode, plaats en gewenst moment in.</p><div class="form-row"><div class="form-group"><label for="f-postcode">Postcode</label><input id="f-postcode" placeholder="3811 AB"></div><div class="form-group"><label for="f-plaats">Plaats</label><input id="f-plaats" placeholder="Amersfoort"></div></div><div class="form-row"><div class="form-group"><label for="f-datum">Gewenste datum</label><input id="f-datum" type="date"></div><div class="form-group"><label for="f-tijd">Gewenste tijd</label><input id="f-tijd" type="time"></div></div></div>
+          <div class="form-step" data-step="6"><h3>Uw contactgegevens</h3><p>Deze gegevens worden pas gedeeld nadat een vakman de klus accepteert.</p><div class="form-group"><label for="f-naam">Naam</label><input id="f-naam" placeholder="Voor- en achternaam"></div><div class="form-row"><div class="form-group"><label for="f-telefoon">Telefoonnummer</label><input id="f-telefoon" placeholder="06..."></div><div class="form-group"><label for="f-email">E-mailadres</label><input id="f-email" type="email" placeholder="naam@email.nl"></div></div></div>
+          <div class="form-step" data-step="7"><h3>Controleer uw aanvraag</h3><p>Klopt alles? Verstuur dan uw aanvraag.</p><div id="overzicht-box"></div></div>
+          <div class="form-nav"><button id="form-prev" class="btn btn-outline">Terug</button><button id="form-next" class="btn btn-primary">Volgende</button><button id="form-submit" class="btn btn-primary" style="display:none">Aanvraag versturen</button></div>
+        </div>
+      </div>
+      <div id="klus-success" class="form-container success-box hidden"><div class="success-box__icon">✅</div><h2>Uw aanvraag is ontvangen</h2><p>Zodra een vakman de klus accepteert, ontvangt u een bevestiging.</p><a href="#" class="btn btn-primary" data-page="klant-dashboard">Bekijk mijn aanvragen</a></div>
+    </section>
+
+    <section id="page-vakman" class="page">
+      <div class="vakman-hero"><div class="vakman-hero__inner"><div><h1>Ontvang klussen in uw regio</h1><p>Sluit u aan bij Fixli en accepteer opdrachten die passen bij uw vakgebied, planning en werkgebied.</p><div class="vakman-voordelen"><div class="vakman-voordeel"><span class="vakman-voordeel__dot">✓</span>Alleen passende aanvragen</div><div class="vakman-voordeel"><span class="vakman-voordeel__dot">✓</span>Zelf bepalen wat u accepteert</div><div class="vakman-voordeel"><span class="vakman-voordeel__dot">✓</span>Controle op KvK en documenten</div></div></div><div class="card"><h3>Aanmelden als vakman</h3><p>Vul uw gegevens in. Na controle krijgt u toegang tot beschikbare klussen.</p><a href="#vakman-aanmeld-form" class="btn btn-primary mt-4">Start aanmelden</a></div></div></div>
+      <section class="section"><div class="container"><div id="vakman-aanmeld-form" class="card"><h2>Vakman aanmelden</h2><p class="mt-4">Bedrijfsgegevens</p><div class="form-row"><div class="form-group"><label>Bedrijfsnaam</label><input id="vm-bedrijf"></div><div class="form-group"><label>Contactpersoon</label><input id="vm-naam"></div></div><div class="form-row"><div class="form-group"><label>E-mailadres</label><input id="vm-email" type="email"></div><div class="form-group"><label>Telefoonnummer</label><input id="vm-telefoon"></div></div><div class="form-row"><div class="form-group"><label>KvK-nummer</label><input id="vm-kvk"></div><div class="form-group"><label>Btw-nummer</label><input id="vm-btw"></div></div><div class="form-row"><div class="form-group"><label>Vestigingsplaats</label><input id="vm-vestiging"></div><div class="form-group"><label>Jaren ervaring</label><input id="vm-ervaring" type="number"></div></div><div class="form-group"><label>Starttarief / uurtarief</label><input id="vm-tarief" placeholder="Bijvoorbeeld 70"></div><div class="form-group"><label>Vakgebieden</label><div class="checkbox-grid"><div class="checkbox-pill"><span class="box"></span>Elektricien</div><div class="checkbox-pill"><span class="box"></span>Loodgieter</div><div class="checkbox-pill"><span class="box"></span>CV / Verwarming</div><div class="checkbox-pill"><span class="box"></span>Laadpaal</div><div class="checkbox-pill"><span class="box"></span>Airco</div><div class="checkbox-pill"><span class="box"></span>Schilder</div><div class="checkbox-pill"><span class="box"></span>Stukadoor</div><div class="checkbox-pill"><span class="box"></span>Timmerman</div><div class="checkbox-pill"><span class="box"></span>Hovenier</div><div class="checkbox-pill"><span class="box"></span>Dakdekker</div></div></div><div class="form-row"><div class="upload-area"><div class="upload-area__icon">📄</div><p>Upload certificaten/diploma’s</p><input type="file" multiple></div><div class="upload-area"><div class="upload-area__icon">🧾</div><p>Upload cv/bedrijfsprofiel</p><input type="file"></div></div><div class="form-row mt-4"><div class="upload-area"><div class="upload-area__icon">🦺</div><p>Upload VCA indien aanwezig</p><input type="file"></div><div class="upload-area"><div class="upload-area__icon">🛡️</div><p>Upload verzekeringsbewijs</p><input type="file"></div></div><button id="vakman-submit" class="btn btn-primary mt-8">Aanmelding versturen</button></div><div id="vakman-aanmeld-success" class="success-box hidden"><div class="success-box__icon">✅</div><h2>Aanmelding ontvangen</h2><p>Uw account wacht op goedkeuring. Na controle kunt u klussen accepteren.</p></div></div></section>
+    </section>
+
+    <section id="page-klant-dashboard" class="page form-page"><div class="container"><div class="section-header"><h2>Mijn aanvragen</h2><p>Bekijk de status van uw geplaatste klussen.</p></div><div id="klant-klussen"></div></div></section>
+
+    <section id="page-vakman-dashboard" class="page form-page"><div class="container"><div id="vakman-login-screen" class="card text-center"><h2>Vakman dashboard</h2><p class="mt-4">Demo: kies een type vakman om het dashboard te bekijken.</p><button id="vakman-demo-login" class="btn btn-primary mt-4">Login als goedgekeurde vakman</button><button id="vakman-demo-pending" class="btn btn-outline mt-4">Login als wachtende vakman</button></div><div id="vakman-dash-content" class="hidden"><div class="klus-card__header"><div><h2 id="vakman-naam">Vakman</h2><p>Dashboard voor beschikbare en geaccepteerde klussen.</p></div><button id="vakman-dash-logout" class="btn btn-outline">Uitloggen</button></div><div id="vakman-status-banner"></div><div class="tabs"><button class="tab-btn vakman-tab active" data-panel="beschikbaar">Beschikbare klussen</button><button class="tab-btn vakman-tab" data-panel="geaccepteerd">Mijn klussen</button></div><div id="vp-beschikbaar" class="tab-panel vakman-panel active"><div id="beschikbare-klussen"></div></div><div id="vp-geaccepteerd" class="tab-panel vakman-panel"><div id="geaccepteerde-klussen"></div></div></div></div></section>
+
+    <section id="page-admin" class="page form-page"><div class="container"><div id="admin-login-screen" class="card text-center"><h2>Admin dashboard</h2><p class="mt-4">Demo wachtwoord: <strong>admin123</strong></p><div class="form-group" style="max-width:320px;margin:20px auto"><input id="admin-pw" type="password" placeholder="Wachtwoord"></div><button id="admin-login-btn" class="btn btn-primary">Inloggen</button></div><div id="admin-content" class="hidden"><div class="klus-card__header"><h2>Admin dashboard</h2><button id="admin-logout" class="btn btn-outline">Uitloggen</button></div><div class="tabs"><button class="tab-btn admin-tab active" data-panel="stats">Statistieken</button><button class="tab-btn admin-tab" data-panel="klussen">Aanvragen</button><button class="tab-btn admin-tab" data-panel="vakmannen">Vakmannen</button></div><div id="ap-stats" class="tab-panel admin-panel active"><div id="admin-stats"></div></div><div id="ap-klussen" class="tab-panel admin-panel"><div id="admin-klussen-table"></div></div><div id="ap-vakmannen" class="tab-panel admin-panel"><div id="admin-vakmannen-table"></div></div></div></div></section>
+
+    <section id="page-over" class="page"><section class="section"><div class="container over-grid"><div><span class="section-label">Over Fixli</span><h2>Een klus aanvragen zonder gedoe</h2><p class="mt-4">Fixli helpt klanten om snel en eenvoudig een betrouwbare vakman te regelen. Geen eindeloos vergelijken of wachten op offertes. De klant plaatst een aanvraag en een beschikbare, gescreende vakman accepteert de klus.</p><p class="mt-4">Klanten kunnen niet zomaar door vakmannen bladeren. Vakmannen zien eerst alleen beperkte informatie over een aanvraag. Pas na acceptatie worden volledige klantgegevens zichtbaar.</p></div><div class="over-visual"><div class="over-visual__block"><div class="over-visual__block__icon">📋</div><div><h4>Aanvraag geplaatst</h4><p>Klant vult klus en locatie in</p></div></div><div class="over-visual__block"><div class="over-visual__block__icon">👷</div><div><h4>Vakman accepteert</h4><p>Alleen passende en gescreende vakmannen</p></div></div><div class="over-visual__block"><div class="over-visual__block__icon">🔒</div><div><h4>Gegevens beschermd</h4><p>Volledige gegevens pas na acceptatie</p></div></div></div></div></section><section class="section section--gray"><div class="container"><div class="section-header"><span class="section-label">Veiligheid</span><h2>Privacy en controle</h2></div><div class="privacy-grid"><div class="privacy-card"><div class="privacy-card__icon">🔒</div><h4>Klantgegevens niet openbaar</h4><p>Naam, telefoon en adres worden pas gedeeld na acceptatie.</p></div><div class="privacy-card"><div class="privacy-card__icon">✅</div><h4>Vakmannen eerst goedgekeurd</h4><p>In de echte versie worden KvK, certificaten en documenten gecontroleerd.</p></div><div class="privacy-card"><div class="privacy-card__icon">🧱</div><h4>Klaar voor backend</h4><p>Deze demo werkt met localStorage. Later kan dit naar Supabase, Firebase of eigen backend.</p></div></div></div></section></section>
+
+    <section id="page-faq" class="page"><section class="section"><div class="container"><div class="section-header"><span class="section-label">FAQ</span><h2>Veelgestelde vragen</h2></div><div class="tabs"><button class="tab-btn active" data-group="faq" data-tab="klant">Voor klanten</button><button class="tab-btn" data-group="faq" data-tab="vakman">Voor vakmannen</button></div><div class="tab-panel active" data-group="faq" data-tab="klant"><div class="faq-list"><div class="faq-item"><button class="faq-question">Hoe werkt Fixli? <span class="arrow">⌄</span></button><div class="faq-answer">U kiest een vakgebied, vult uw aanvraag in en een gescreende vakman kan de klus accepteren.</div></div><div class="faq-item"><button class="faq-question">Moet ik een account maken? <span class="arrow">⌄</span></button><div class="faq-answer">Nee, u kunt eerst een aanvraag starten. Een account is handig om uw aanvraag later te volgen.</div></div><div class="faq-item"><button class="faq-question">Wanneer krijgt de vakman mijn gegevens? <span class="arrow">⌄</span></button><div class="faq-answer">Pas nadat de vakman de klus heeft geaccepteerd.</div></div><div class="faq-item"><button class="faq-question">Kan ik annuleren? <span class="arrow">⌄</span></button><div class="faq-answer">In het klantdashboard kunt u open aanvragen annuleren.</div></div></div></div><div class="tab-panel" data-group="faq" data-tab="vakman"><div class="faq-list"><div class="faq-item"><button class="faq-question">Hoe meld ik mij aan? <span class="arrow">⌄</span></button><div class="faq-answer">Via de pagina Voor vakmannen vult u bedrijfsgegevens, KvK, vakgebieden en documenten in.</div></div><div class="faq-item"><button class="faq-question">Wanneer kan ik klussen accepteren? <span class="arrow">⌄</span></button><div class="faq-answer">Na goedkeuring door Fixli krijgt u toegang tot passende aanvragen.</div></div><div class="faq-item"><button class="faq-question">Welke documenten zijn nodig? <span class="arrow">⌄</span></button><div class="faq-answer">Denk aan KvK, certificaten, diploma’s, VCA, verzekering en eventueel een bedrijfsprofiel.</div></div><div class="faq-item"><button class="faq-question">Zie ik direct klantgegevens? <span class="arrow">⌄</span></button><div class="faq-answer">Nee, volledige gegevens worden pas zichtbaar na acceptatie van de klus.</div></div></div></div></div></section></section>
+
+    <section id="page-contact" class="page"><section class="section"><div class="container contact-grid"><div class="contact-info"><span class="section-label">Contact</span><h2>Neem contact op</h2><p>Heeft u een vraag als klant of vakman? Stuur ons een bericht.</p><div class="contact-item mt-8"><div class="contact-item__icon">✉️</div><div><h4>E-mail</h4><p>info@fixli.nl</p></div></div><div class="contact-item"><div class="contact-item__icon">🔒</div><div><h4>Privacy</h4><p>Wij tonen vakmannen niet openbaar aan klanten.</p></div></div></div><div><div id="contact-form-wrap" class="card"><div class="form-row"><div class="form-group"><label>Naam</label><input id="c-naam"></div><div class="form-group"><label>E-mailadres</label><input id="c-email" type="email"></div></div><div class="form-group"><label>Onderwerp</label><select><option>Klantvraag</option><option>Vakmanvraag</option><option>Overig</option></select></div><div class="form-group"><label>Bericht</label><textarea id="c-bericht"></textarea></div><button id="contact-submit" class="btn btn-primary">Versturen</button></div><div id="contact-success" class="success-box hidden"><div class="success-box__icon">✅</div><h2>Bericht verzonden</h2><p>Bedankt, we nemen zo snel mogelijk contact op.</p></div></div></div></section></section>
+  </main>
+
+  <div id="auth-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal">
+      <button id="auth-modal-close" class="modal__close" aria-label="Sluiten">×</button>
+      <h3>Mijn Fixli</h3><p>Log in of maak een klantaccount aan.</p>
+      <div class="modal__tabs"><button class="modal__tab active" data-tab="login-panel">Inloggen</button><button class="modal__tab" data-tab="register-panel">Registreren</button></div>
+      <div id="modal-msg" class="hidden"></div>
+      <div id="login-panel" class="modal__panel"><div class="form-group"><label>E-mailadres</label><input id="login-email" type="email" value="jan@email.nl"></div><div class="form-group"><label>Wachtwoord</label><input id="login-pw" type="password" value="demo123"></div><button id="btn-login" class="btn btn-primary" style="width:100%;justify-content:center">Inloggen</button></div>
+      <div id="register-panel" class="modal__panel hidden"><div class="form-group"><label>Naam</label><input id="reg-naam"></div><div class="form-group"><label>E-mailadres</label><input id="reg-email" type="email"></div><div class="form-group"><label>Wachtwoord</label><input id="reg-pw" type="password"></div><button id="btn-register" class="btn btn-primary" style="width:100%;justify-content:center">Account maken</button></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__brand"><a href="#" class="navbar__logo" data-page="home"><span class="navbar__logo-icon">✓</span><span>Fixli</span></a><p>Jouw klus, snel geregeld. Demo website voor klantaanvragen, vakmannen en admin.</p></div>
+      <div class="footer__col"><h4>Klanten</h4><ul><li><a href="#" data-page="aanvragen">Klus aanvragen</a></li><li><a href="#" data-page="klant-dashboard">Mijn aanvragen</a></li><li><a href="#" data-page="faq">Veelgestelde vragen</a></li></ul></div>
+      <div class="footer__col"><h4>Vakmannen</h4><ul><li><a href="#" data-page="vakman">Aanmelden</a></li><li><a href="#" data-page="vakman-dashboard">Dashboard</a></li><li><a href="#" data-page="admin">Admin demo</a></li></ul></div>
+      <div class="footer__col"><h4>Fixli</h4><ul><li><a href="#" data-page="over">Over ons</a></li><li><a href="#" data-page="contact">Contact</a></li><li><a href="#">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>© 2026 Fixli. Alle rechten voorbehouden.</span><span>Demo met localStorage — later koppelen aan backend.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
