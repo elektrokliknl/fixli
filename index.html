@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jouw klus, snel geregeld — Fixli</title>
+  <meta name="description" content="Fixli: kies je klus, zie direct de prijs en wij zoeken een passende, gecontroleerde vakman." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Fixli homepage">
+        <span class="navbar__logo-icon">✓</span><span>Fixli</span>
+      </a>
+      <nav class="navbar__nav" aria-label="Hoofdnavigatie">
+        <a href="index.html">Home</a>
+        <a href="hoe-werkt-het.html">Hoe werkt het</a>
+        <a href="voor-vakmannen.html">Voor vakmannen</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <span id="user-label"></span>
+        <button class="btn btn-sm btn-outline" data-open-auth>Inloggen</button>
+        <button id="btn-logout" class="btn btn-sm btn-outline hidden">Uitloggen</button>
+        <a href="klus-aanvragen.html" class="btn btn-sm btn-primary">Klus aanvragen</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Menu openen"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="navbar__mobile-menu" aria-label="Mobiele navigatie">
+      <a href="index.html">Home</a>
+      <a href="klus-aanvragen.html">Klus aanvragen</a>
+      <a href="hoe-werkt-het.html">Hoe werkt het</a>
+      <a href="mijn-aanvragen.html">Mijn aanvragen</a>
+      <a href="voor-vakmannen.html">Voor vakmannen</a>
+      <a href="vakman-dashboard.html">Vakman dashboard</a>
+      <a href="over-ons.html">Over Fixli</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+
+      <div class="hero">
+        <div class="hero__inner">
+          <div>
+            <div class="hero__badge">Klusplatform</div>
+            <h1>Boek eenvoudig een <span>betrouwbare vakman</span></h1>
+            <p>Kies je klus, zie direct de prijs en wij zoeken een passende, door Fixli gecontroleerde vakman voor uw aanvraag. Geen eindeloos offertes vergelijken.</p>
+            <div class="hero__ctas">
+              <a href="klus-aanvragen.html" class="btn btn-primary btn-lg">Klus aanvragen</a>
+              <a href="voor-vakmannen.html" class="btn btn-outline-white btn-lg">Aanmelden als vakman</a>
+            </div>
+            <div class="hero__stats">
+              <div class="hero__stat"><strong>11</strong><span>Vakgebieden</span></div>
+              <div class="hero__stat"><strong>Vooraf</strong><span>Prijs bekend</span></div>
+              <div class="hero__stat"><strong>🔒</strong><span>Gegevens beschermd tot acceptatie</span></div>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h3>Waar heeft u hulp bij nodig?</h3>
+            <div class="hero__search-group">
+              <div class="hero__select-wrap">
+                <select id="hero-vakgebied"></select>
+              </div>
+              <button id="hero-search-btn" class="btn btn-primary">Start aanvraag →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header"><span class="section-label">Zo werkt Fixli</span><h2>Snel van aanvraag naar afspraak</h2></div>
+          <div class="steps">
+            <div class="step-card"><div class="step-card__num">1</div><h3>Kies uw klus</h3><p>Selecteer het vakgebied en beantwoord een paar korte vragen.</p></div>
+            <div class="step-card"><div class="step-card__num">2</div><h3>Bekijk de prijs en plaats uw aanvraag</h3><p>U ziet vooraf de prijs of het uurtarief incl. btw. Betalen doet u veilig via Fixli — meestal gewoon na afloop.</p></div>
+            <div class="step-card"><div class="step-card__num">3</div><h3>We zoeken een passende vakman</h3><p>Na controle door Fixli kan een gecontroleerde vakman uw klus accepteren.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--gray">
+        <div class="container">
+          <div class="section-header"><span class="section-label">Populair</span><h2>Populaire vakgebieden</h2></div>
+          <div class="vakgebieden-grid" id="home-vakgebieden"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="voordelen">
+            <div class="voordeel-card"><div class="voordeel-card__icon">💶</div><div><h4>Vooraf duidelijkheid</h4><p>U ziet de prijs incl. btw vóór u de aanvraag plaatst.</p></div></div>
+            <div class="voordeel-card"><div class="voordeel-card__icon">✅</div><div><h4>Gecontroleerde vakmannen</h4><p>Fixli controleert KvK, documenten en verzekering vóór toelating.</p></div></div>
+            <div class="voordeel-card"><div class="voordeel-card__icon">🔒</div><div><h4>Gegevens beschermd</h4><p>Uw contactgegevens worden pas na acceptatie gedeeld.</p></div></div>
+            <div class="voordeel-card"><div class="voordeel-card__icon">💳</div><div><h4>Betaling via Fixli</h4><p>Na afloop betalen via een beveiligde betaallink; vooraf betalen kan ook.</p></div></div>
+          </div>
+
+          <div class="section-header mt-8"><span class="section-label">Ervaringen</span><h2>Wat klanten zeggen</h2></div>
+          <div class="reviews-row">
+            <div class="review-card"><strong>★★★★★</strong><p>"Binnen een dag een elektricien voor onze stopcontacten. Prijs vooraf duidelijk, top."</p><span>— Voorbeeldreview, Amersfoort</span></div>
+            <div class="review-card"><strong>★★★★★</strong><p>"Geen tien offertes hoeven aanvragen. Geboekt, betaald en geregeld."</p><span>— Voorbeeldreview, Utrecht</span></div>
+            <div class="review-card"><strong>★★★★☆</strong><p>"Fijn dat ik de status van mijn aanvraag in het dashboard kon volgen."</p><span>— Voorbeeldreview, Leusden</span></div>
+          </div>
+
+          <div class="cta-banner mt-8">
+            <h2>Vakman? Ontvang klussen in uw regio</h2>
+            <p>Alleen passende aanvragen, zelf bepalen wat u accepteert, uitbetaling via Fixli.</p>
+            <div class="cta-banner__btns"><a href="voor-vakmannen.html" class="btn btn-primary">Aanmelden als vakman</a><a href="klus-aanvragen.html" class="btn btn-outline-white">Ik zoek een vakman</a></div>
+          </div>
+        </div>
+      </section>
+      </main>
+<div id="auth-modal" class="modal-overlay" aria-hidden="true"><div class="modal">
+    <button id="auth-modal-close" class="modal__close" aria-label="Sluiten">×</button>
+    <h3>Mijn Fixli</h3><p>Log in of maak een klantaccount aan.</p>
+    <div class="modal__tabs"><button class="modal__tab active" data-tab="login-panel">Inloggen</button><button class="modal__tab" data-tab="register-panel">Registreren</button></div>
+    <div id="modal-msg" class="hidden"></div>
+    <div id="login-panel" class="modal__panel">
+      <div class="form-group"><label>E-mailadres</label><input id="login-email" type="email" value="jan@email.nl"></div>
+      <div class="form-group"><label>Wachtwoord</label><input id="login-pw" type="password" value="demo123"></div>
+      <button id="btn-login" class="btn btn-primary" style="width:100%;justify-content:center">Inloggen</button>
+    </div>
+    <div id="register-panel" class="modal__panel hidden">
+      <div class="form-group"><label>Naam</label><input id="reg-naam"></div>
+      <div class="form-group"><label>E-mailadres</label><input id="reg-email" type="email"></div>
+      <div class="form-group"><label>Telefoon</label><input id="reg-tel"></div>
+      <div class="form-group"><label>Wachtwoord (min. 6 tekens)</label><input id="reg-pw" type="password"></div>
+      <button id="btn-register" class="btn btn-primary" style="width:100%;justify-content:center">Account maken</button>
+    </div>
+  </div></div>
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__brand"><a href="index.html" class="navbar__logo"><span class="navbar__logo-icon">✓</span><span>Fixli</span></a><p>Jouw klus, snel geregeld. Bemiddelingsplatform voor klussen in en om huis.</p><p style="margin-top:8px">✉️ info@elektroklik.nl</p></div>
+      <div class="footer__col"><h4>Klanten</h4><ul><li><a href="klus-aanvragen.html">Klus aanvragen</a></li><li><a href="mijn-aanvragen.html">Mijn aanvragen</a></li><li><a href="hoe-werkt-het.html">Hoe werkt het</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="footer__col"><h4>Vakmannen</h4><ul><li><a href="voor-vakmannen.html">Voor vakmannen</a></li><li><a href="vakman-aanmelden.html">Aanmelden</a></li><li><a href="vakman-dashboard.html">Dashboard</a></li><li><a href="vakmanvoorwaarden.html">Vakmanvoorwaarden</a></li></ul></div>
+      <div class="footer__col"><h4>Juridisch</h4><ul><li><a href="algemene-voorwaarden.html">Algemene voorwaarden</a></li><li><a href="privacybeleid.html">Privacybeleid</a></li><li><a href="cookiebeleid.html">Cookiebeleid</a></li><li><a href="klachtenprocedure.html">Klachtenprocedure</a></li><li><a href="annuleringsvoorwaarden.html">Annuleringsvoorwaarden</a></li></ul></div>
+      <div class="footer__col"><h4>Fixli</h4><ul><li><a href="over-ons.html">Over ons</a></li><li><a href="contact.html">Contact</a></li><li><a href="admin.html">Beheer</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>© 2026 Fixli. Alle rechten voorbehouden.</span><span class="demo-only">Development-modus — localStorage als tijdelijke database.</span></div>
+  </footer>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

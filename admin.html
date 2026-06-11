@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Fixli</title>
+  <meta name="description" content="Beheer aanvragen, vakmannen, tarieven, controle, facturen en instellingen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Fixli homepage">
+        <span class="navbar__logo-icon">✓</span><span>Fixli</span>
+      </a>
+      <nav class="navbar__nav" aria-label="Hoofdnavigatie">
+        <a href="index.html">Home</a>
+        <a href="hoe-werkt-het.html">Hoe werkt het</a>
+        <a href="voor-vakmannen.html">Voor vakmannen</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <span id="user-label"></span>
+        <button class="btn btn-sm btn-outline" data-open-auth>Inloggen</button>
+        <button id="btn-logout" class="btn btn-sm btn-outline hidden">Uitloggen</button>
+        <a href="klus-aanvragen.html" class="btn btn-sm btn-primary">Klus aanvragen</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Menu openen"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="navbar__mobile-menu" aria-label="Mobiele navigatie">
+      <a href="index.html">Home</a>
+      <a href="klus-aanvragen.html">Klus aanvragen</a>
+      <a href="hoe-werkt-het.html">Hoe werkt het</a>
+      <a href="mijn-aanvragen.html">Mijn aanvragen</a>
+      <a href="voor-vakmannen.html">Voor vakmannen</a>
+      <a href="vakman-dashboard.html">Vakman dashboard</a>
+      <a href="over-ons.html">Over Fixli</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+
+      <div class="container">
+        <div id="admin-login-screen" class="card text-center" style="max-width:380px;margin:0 auto">
+          <h2>Admin dashboard</h2>
+          <p class="mt-4">Alleen voor beheerders van Fixli.</p><p class="demo-only" style="font-size:.78rem;color:var(--gray-400)">Demo-wachtwoord: admin123 — // BACKEND: vervang door beveiligde authenticatie</p>
+          <div class="form-group" style="margin-top:16px"><input id="admin-pw" type="password" placeholder="Wachtwoord"></div>
+          <button id="admin-login-btn" class="btn btn-primary" style="width:100%;justify-content:center">Inloggen</button>
+        </div>
+        <div id="admin-content" class="hidden">
+          <div class="klus-card__header"><h2>Admin dashboard</h2><button id="admin-logout" class="btn btn-outline">Uitloggen</button></div>
+          <div class="tabs" id="admin-tabs">
+            <button class="tab-btn admin-tab active" data-panel="stats">Statistieken</button>
+            <button class="tab-btn admin-tab" data-panel="klussen">Aanvragen</button>
+            <button class="tab-btn admin-tab" data-panel="controle">Controle</button>
+            <button class="tab-btn admin-tab" data-panel="vakmannen">Vakmannen</button>
+            <button class="tab-btn admin-tab" data-panel="facturen">Facturen &amp; betalingen</button>
+            <button class="tab-btn admin-tab" data-panel="klachten">Klachten</button>
+            <button class="tab-btn admin-tab" data-panel="reviews">Reviews</button>
+            <button class="tab-btn admin-tab" data-panel="notif">Notificaties</button>
+            <button class="tab-btn admin-tab" data-panel="tarieven">Tarieven</button>
+            <button class="tab-btn admin-tab" data-panel="instellingen">Instellingen</button>
+          </div>
+          <div id="ap-stats" class="tab-panel admin-panel active"><div id="admin-stats"></div></div>
+          <div id="ap-klussen" class="tab-panel admin-panel"><div id="admin-klussen-table"></div></div>
+          <div id="ap-controle" class="tab-panel admin-panel"><div id="admin-controle"></div></div>
+          <div id="ap-vakmannen" class="tab-panel admin-panel"><div id="admin-vakmannen-table"></div></div>
+          <div id="ap-facturen" class="tab-panel admin-panel"><div id="admin-facturen-table"></div></div>
+          <div id="ap-klachten" class="tab-panel admin-panel"><div id="admin-klachten-table"></div></div>
+          <div id="ap-reviews" class="tab-panel admin-panel"><div id="admin-reviews-table"></div></div>
+          <div id="ap-notif" class="tab-panel admin-panel"><div id="admin-notif-table"></div></div>
+          <div id="ap-tarieven" class="tab-panel admin-panel"><div id="admin-tarieven"></div></div>
+          <div id="ap-instellingen" class="tab-panel admin-panel"><div id="admin-settings"></div></div>
+        </div>
+      </div>
+      </main>
+<div id="factuur-modal" class="modal-overlay" aria-hidden="true"><div class="modal" style="max-width:520px">
+    <button id="factuur-close" class="modal__close" aria-label="Sluiten">×</button>
+    <div id="factuur-body"></div>
+    <button id="factuur-print" class="btn btn-outline mt-4" style="width:100%;justify-content:center">🖨️ Download / print factuur</button>
+  </div></div>
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__brand"><a href="index.html" class="navbar__logo"><span class="navbar__logo-icon">✓</span><span>Fixli</span></a><p>Jouw klus, snel geregeld. Bemiddelingsplatform voor klussen in en om huis.</p><p style="margin-top:8px">✉️ info@elektroklik.nl</p></div>
+      <div class="footer__col"><h4>Klanten</h4><ul><li><a href="klus-aanvragen.html">Klus aanvragen</a></li><li><a href="mijn-aanvragen.html">Mijn aanvragen</a></li><li><a href="hoe-werkt-het.html">Hoe werkt het</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="footer__col"><h4>Vakmannen</h4><ul><li><a href="voor-vakmannen.html">Voor vakmannen</a></li><li><a href="vakman-aanmelden.html">Aanmelden</a></li><li><a href="vakman-dashboard.html">Dashboard</a></li><li><a href="vakmanvoorwaarden.html">Vakmanvoorwaarden</a></li></ul></div>
+      <div class="footer__col"><h4>Juridisch</h4><ul><li><a href="algemene-voorwaarden.html">Algemene voorwaarden</a></li><li><a href="privacybeleid.html">Privacybeleid</a></li><li><a href="cookiebeleid.html">Cookiebeleid</a></li><li><a href="klachtenprocedure.html">Klachtenprocedure</a></li><li><a href="annuleringsvoorwaarden.html">Annuleringsvoorwaarden</a></li></ul></div>
+      <div class="footer__col"><h4>Fixli</h4><ul><li><a href="over-ons.html">Over ons</a></li><li><a href="contact.html">Contact</a></li><li><a href="admin.html">Beheer</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>© 2026 Fixli. Alle rechten voorbehouden.</span><span class="demo-only">Development-modus — localStorage als tijdelijke database.</span></div>
+  </footer>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
