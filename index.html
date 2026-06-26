@@ -1,945 +1,470 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elektricien nodig? ElektroKlik – Laadpaal, groepenkast, storing | Amersfoort e.o.</title>
-<meta name="description" content="ElektroKlik is uw gecertificeerde elektricien voor laadpaal installatie, groepenkast uitbreiden, inductiekookplaat aansluiten en elektra storingen. Snel, veilig en netjes afgewerkt. Vraag direct een offerte aan.">
-<link rel="canonical" href="https://www.elektroklik.nl/">
-<meta property="og:title" content="ElektroKlik – Gecertificeerde elektricien voor thuis">
-<meta property="og:description" content="Laadpaal installeren, groepenkast uitbreiden of een elektra storing oplossen? ElektroKlik regelt het snel, veilig en netjes.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.elektroklik.nl/">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ElectricalContractor","name":"ElektroKlik","url":"https://www.elektroklik.nl","telephone":"+31-6-58856729","email":"info@elektroklik.nl","description":"Gecertificeerd elektrotechnisch bedrijf voor laadpaal installatie, groepenkast uitbreiden, inductiekookplaat aansluiten, Perilex aansluiting aanleggen en elektra storingen.","address":{"@type":"PostalAddress","addressLocality":"Amersfoort","addressCountry":"NL"},"areaServed":["Amersfoort","Leusden","Soest","Nijkerk","Hoevelaken","Baarn","Bunschoten"],"priceRange":"€€","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:30"}]}
-<\/script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:#1a1a1a;background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:inherit}ul{list-style:none}img,svg{display:block}button{font-family:inherit}
-:root{
-  --teal:#0E7A78;--teal-d:#095e5c;--teal-l:#e6f4f4;
-  --blauw:#0E4A72;--oranje:#F5A623;--oranje-d:#d48a10;
-  --tekst:#1a1a1a;--tekst2:#4a4a4a;--tekst3:#6b7280;
-  --rand:#e2e8f0;--rand2:#cbd5e1;--fout:#dc2626;--succes:#059669;
-  --r6:6px;--r10:10px;--r16:16px;
-}
-.container{max-width:1120px;margin:0 auto;padding:0 24px}
-.verborgen{display:none!important}
-.sectie{padding:64px 0}.sectie-alt{background:#f8fafc}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-/* HEADER */
-.header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--rand);height:64px;display:flex;align-items:center}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
-.logo img{height:38px;width:auto;display:block}
-.header-spoed{display:flex;align-items:center;gap:8px;background:#fef2f2;border:1px solid #fecaca;border-radius:var(--r10);padding:8px 14px;text-decoration:none;color:#b91c1c;font-size:.875rem;font-weight:600;white-space:nowrap;transition:background .18s}
-.header-spoed:hover{background:#fee2e2}
-.header-spoed svg{width:16px;height:16px;flex-shrink:0}
+  <title>Elektricien nodig? ElektroKlik – Laadpaal, groepenkast, storing & meer | Amersfoort e.o.</title>
+  <meta name="description" content="ElektroKlik is uw gecertificeerde elektricien voor laadpaal installatie, groepenkast uitbreiden, inductiekookplaat aansluiten en elektra storingen. Snel, veilig en netjes afgewerkt. Vraag direct een offerte aan." />
+  <meta name="keywords" content="laadpaal installatie, laadpaal installeren, groepenkast uitbreiden, extra groep aanleggen, kookgroep aanleggen, inductiekookplaat aansluiten, perilex aansluiting aanleggen, elektra storing oplossen, elektricien amersfoort, elektricien leusden, elektricien soest, elektricien nijkerk" />
+  <link rel="canonical" href="https://www.elektroklik.nl/" />
 
-/* HERO */
-.hero{background:linear-gradient(135deg,#0b3f5e 0%,#0E4A72 55%,#0a6068 100%);padding:72px 0 80px}
-.hero-inner{display:grid;grid-template-columns:1fr 468px;gap:56px;align-items:start}
-.hero-tekst{color:#fff}
-.eyebrow{display:inline-block;font-size:.8125rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--oranje);margin-bottom:16px}
-.hero-tekst h1{font-size:clamp(1.75rem,3vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:20px;color:#fff}
-.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.82);max-width:480px;margin-bottom:32px;line-height:1.6}
-.hero-checks{display:flex;flex-direction:column;gap:11px}
-.hero-checks li{display:flex;align-items:center;gap:10px;font-size:.9375rem;color:rgba(255,255,255,.9)}
-.hero-checks li svg{width:20px;height:20px;flex-shrink:0}
+  <!-- Open Graph -->
+  <meta property="og:title" content="ElektroKlik – Gecertificeerde elektricien voor thuis" />
+  <meta property="og:description" content="Laadpaal installeren, groepenkast uitbreiden of een elektra storing oplossen? ElektroKlik regelt het snel, veilig en netjes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.elektroklik.nl/" />
 
-/* FUNNEL KAART */
-.funnel-kaart{background:#fff;border-radius:var(--r16);box-shadow:0 12px 40px rgba(0,0,0,.14),0 4px 12px rgba(0,0,0,.07);overflow:hidden}
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ElectricalContractor",
+    "name": "ElektroKlik",
+    "url": "https://www.elektroklik.nl",
+    "telephone": "+31-6-58856729",
+    "email": "info@elektroklik.nl",
+    "description": "Gecertificeerd elektrotechnisch bedrijf voor laadpaal installatie, groepenkast uitbreiden, inductiekookplaat aansluiten, Perilex aansluiting aanleggen en elektra storingen.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Amersfoort",
+      "addressCountry": "NL"
+    },
+    "areaServed": ["Amersfoort","Leusden","Soest","Nijkerk","Hoevelaken","Baarn","Bunschoten"],
+    "priceRange": "€€",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "17:30"
+      }
+    ]
+  }
+  </script>
 
-/* Voortgang */
-.voortgang{display:flex;align-items:center;padding:18px 24px 0;margin-bottom:2px}
-.vstap{display:flex;align-items:center;gap:6px;flex-shrink:0}
-.vstap-num{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;background:var(--rand);color:var(--tekst3);transition:background .25s,color .25s}
-.vstap-lbl{font-size:.75rem;font-weight:500;color:var(--tekst3);transition:color .25s}
-.vstap.actief .vstap-num{background:var(--teal);color:#fff}
-.vstap.actief .vstap-lbl{color:var(--teal)}
-.vstap.klaar .vstap-num{background:var(--succes);color:#fff}
-.vstap.klaar .vstap-lbl{color:var(--succes)}
-.vlijn{flex:1;height:2px;background:var(--rand);margin:0 6px;border-radius:2px;transition:background .25s}
-.vlijn.klaar{background:var(--succes)}
-
-/* Stap */
-.stap{border:none;padding:20px 24px 24px}
-.stap-kop{margin-bottom:18px}
-.terug{display:inline-flex;align-items:center;gap:4px;background:none;border:none;cursor:pointer;font-size:.8125rem;font-weight:500;color:var(--teal);padding:0;margin-bottom:8px;transition:color .15s}
-.terug:hover{color:var(--teal-d)}
-.terug svg{width:16px;height:16px}
-.stap-titel{font-size:1.15rem;font-weight:700;color:var(--tekst);margin-bottom:4px}
-.stap-sub{font-size:.85rem;color:var(--tekst3)}
-
-/* Velden */
-.veld{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
-.veld:last-child{margin-bottom:0}
-.veld label{font-size:.85rem;font-weight:600;color:var(--tekst)}
-.veld input[type=text],.veld input[type=tel],.veld input[type=email],.veld textarea{width:100%;padding:10px 13px;border:1.5px solid var(--rand2);border-radius:var(--r6);font-size:.9375rem;font-family:inherit;color:var(--tekst);background:#fff;outline:none;transition:border-color .18s,box-shadow .18s;-webkit-appearance:none;appearance:none}
-.veld input:focus,.veld textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(14,122,120,.12)}
-.veld input.fout,.veld textarea.fout{border-color:var(--fout)}
-.veld textarea{resize:vertical;min-height:76px}
-.veld-fout{font-size:.78rem;font-weight:500;color:var(--fout);display:none}
-.veld-fout.zichtbaar{display:block}
-.req{color:var(--fout)}
-
-/* Radio knop groep (Ja/Nee/Weet ik niet stijl) */
-.radio-groep{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
-.radio-knop{display:flex;align-items:center;gap:7px;padding:9px 14px;border:1.5px solid var(--rand2);border-radius:var(--r6);cursor:pointer;font-size:.875rem;font-weight:500;color:var(--tekst2);transition:border-color .18s,background .18s,color .18s;background:#fff}
-.radio-knop:hover{border-color:var(--teal);background:var(--teal-l);color:var(--teal)}
-.radio-knop input[type=radio]{position:absolute;opacity:0;width:0;height:0;pointer-events:none}
-.radio-knop.geselecteerd{border-color:var(--teal);background:var(--teal-l);color:var(--teal);font-weight:600}
-
-/* Postcode rij */
-.pc-rij{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.pc-rij .veld{margin-bottom:0}
-
-/* Veld rij */
-.vrij{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-.vrij .veld{margin-bottom:0}
-
-/* Dienst kaarten */
-.dienst-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px}
-.dienst-kaart{display:flex;flex-direction:column;align-items:center;gap:7px;padding:13px 8px;border:1.5px solid var(--rand2);border-radius:var(--r10);cursor:pointer;background:#fff;text-align:center;transition:border-color .18s,background .18s,box-shadow .18s;position:relative}
-.dienst-kaart:hover{border-color:var(--teal);background:var(--teal-l)}
-.dienst-kaart input[type=radio]{position:absolute;opacity:0;width:0;height:0;pointer-events:none}
-.dienst-kaart.geselecteerd{border-color:var(--teal);background:var(--teal-l);box-shadow:0 0 0 3px rgba(14,122,120,.18)}
-.dienst-kaart.storing-kaart.geselecteerd{border-color:#dc6b19;box-shadow:0 0 0 3px rgba(220,107,25,.15);background:#fff7ed}
-.d-ikoon{width:40px;height:40px;border-radius:9px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;color:var(--teal);transition:background .18s}
-.d-ikoon svg{width:20px;height:20px}
-.dienst-kaart:hover .d-ikoon,.dienst-kaart.geselecteerd .d-ikoon{background:rgba(14,122,120,.15)}
-.storing-kaart .d-ikoon{color:#dc6b19}
-.storing-kaart.geselecteerd .d-ikoon{background:rgba(220,107,25,.12)}
-.d-naam{font-size:.78rem;font-weight:600;color:var(--tekst);line-height:1.3}
-
-/* Spoed melding */
-.spoed-melding{display:flex;align-items:flex-start;gap:10px;padding:11px 13px;background:#fff7ed;border:1px solid #fed7aa;border-radius:var(--r10);font-size:.85rem;color:#9a3412;margin-bottom:12px}
-.spoed-melding svg{width:16px;height:16px;flex-shrink:0;margin-top:2px;color:#ea580c}
-.spoed-melding a{color:#9a3412;font-weight:700}
-
-/* Sectie label */
-.veld-sectie-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--tekst3);margin-bottom:6px;margin-top:14px}
-.veld-sectie-label:first-child{margin-top:0}
-
-/* Privacy */
-.privacy-veld{margin-bottom:14px}
-.cb-label{display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-size:.875rem;color:var(--tekst2)}
-.cb-label input[type=checkbox]{width:17px;height:17px;flex-shrink:0;margin-top:2px;accent-color:var(--teal);cursor:pointer}
-.cb-label a{color:var(--teal);text-decoration:underline}
-
-/* Volgende knop */
-.btn-volgende{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px 24px;background:var(--teal);color:#fff;border:none;border-radius:var(--r10);font-size:.9375rem;font-weight:700;cursor:pointer;transition:background .18s,transform .12s;margin-top:4px}
-.btn-volgende:hover{background:var(--teal-d)}
-.btn-volgende:active{transform:scale(.985)}
-.btn-volgende svg{width:17px;height:17px}
-.btn-verstuur{background:var(--oranje);color:#1a1a1a}
-.btn-verstuur:hover{background:var(--oranje-d);color:#fff}
-.form-noot{text-align:center;font-size:.75rem;color:var(--tekst3);margin-top:8px}
-
-/* Succes */
-.form-succes{padding:36px 24px;text-align:center}
-.form-succes svg{width:44px;height:44px;margin:0 auto 14px}
-.form-succes h3{font-size:1.2rem;font-weight:700;margin-bottom:8px}
-.form-succes p{font-size:.9rem;color:var(--tekst2);margin-bottom:6px}
-.form-succes a{color:var(--teal);font-weight:600}
-
-/* VERTROUWEN */
-.vertrouwen{background:#fff;border-bottom:1px solid var(--rand);padding:30px 0}
-.vertrouwen-rij{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.vt-item{display:flex;align-items:flex-start;gap:13px}
-.vt-item svg{width:24px;height:24px;flex-shrink:0;margin-top:3px;color:var(--teal)}
-.vt-item strong{display:block;font-size:.85rem;font-weight:700;margin-bottom:2px}
-.vt-item span{font-size:.8rem;color:var(--tekst3)}
-
-/* DIENSTEN */
-.diensten-sectie h2{font-size:1.5rem;font-weight:800;margin-bottom:28px}
-.diensten-rij{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.ds-kaart{padding:22px;border:1px solid var(--rand);border-radius:var(--r16);background:#fff;transition:box-shadow .2s,border-color .2s}
-.ds-kaart:hover{border-color:var(--teal);box-shadow:0 4px 16px rgba(0,0,0,.1)}
-.ds-ikoon{width:44px;height:44px;border-radius:var(--r10);background:var(--teal-l);color:var(--teal);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
-.ds-ikoon svg{width:22px;height:22px}
-.ds-ikoon.storing{background:#fff7ed;color:#dc6b19}
-.ds-kaart h3{font-size:.9375rem;font-weight:700;margin-bottom:6px}
-.ds-kaart p{font-size:.85rem;color:var(--tekst2);line-height:1.55}
-
-/* FAQ */
-.faq-inner{max-width:700px;margin:0 auto}
-.faq-inner h2{font-size:1.5rem;font-weight:800;margin-bottom:24px}
-.faq-lijst{display:flex;flex-direction:column;gap:2px}
-.faq-item{border:1px solid var(--rand);border-radius:var(--r10);background:#fff;overflow:hidden}
-.faq-vraag{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:16px 18px;background:none;border:none;cursor:pointer;font-family:inherit;font-size:.9rem;font-weight:600;color:var(--tekst);text-align:left;transition:background .15s}
-.faq-vraag:hover{background:#f8fafc}
-.faq-vraag svg{width:17px;height:17px;flex-shrink:0;color:var(--tekst3);transition:transform .22s}
-.faq-vraag[aria-expanded=true] svg{transform:rotate(180deg)}
-.faq-antwoord{padding:0 18px 16px;border-top:1px solid var(--rand)}
-.faq-antwoord p{font-size:.875rem;color:var(--tekst2);line-height:1.65}
-
-/* CTA SLOT */
-.cta-slot{background:linear-gradient(135deg,#0b3f5e 0%,#0E4A72 100%);padding:52px 0}
-.cta-slot-inner{display:flex;align-items:center;justify-content:space-between;gap:32px}
-.cta-slot h2{font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:8px}
-.cta-slot p{color:rgba(255,255,255,.75);font-size:.95rem}
-.btn-cta{display:inline-flex;align-items:center;padding:15px 30px;background:var(--oranje);color:#1a1a1a;border-radius:var(--r10);font-size:1rem;font-weight:800;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:background .18s,transform .12s}
-.btn-cta:hover{background:var(--oranje-d);color:#fff}
-
-/* FOOTER */
-.footer{background:var(--blauw);color:rgba(255,255,255,.85)}
-.footer-inner{display:grid;grid-template-columns:1fr auto;gap:40px;padding:36px 0;align-items:start}
-.footer-merk img{height:32px;width:auto;filter:brightness(0) invert(1);opacity:.9}
-.footer-merk p{font-size:.82rem;color:rgba(255,255,255,.5);margin-top:8px}
-.footer-contact{text-align:right}
-.footer-contact p{font-size:.85rem;margin-bottom:6px}
-.footer-contact a{color:rgba(255,255,255,.85);text-decoration:none}
-.footer-contact a:hover{color:#fff;text-decoration:underline}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:14px 0}
-.footer-bottom p{font-size:.8rem;color:rgba(255,255,255,.4)}
-
-/* STICKY SPOED */
-.sticky-spoed{display:none;position:fixed;bottom:20px;right:20px;z-index:200;background:#dc2626;color:#fff;padding:13px 17px;border-radius:50px;text-decoration:none;font-size:.875rem;font-weight:700;align-items:center;gap:8px;box-shadow:0 4px 16px rgba(220,38,38,.4);transition:background .18s}
-.sticky-spoed svg{width:18px;height:18px}
-.sticky-spoed:hover{background:#b91c1c}
-
-:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
-@keyframes stapIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.stap:not(.verborgen){animation:stapIn .2s ease-out}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
-
-@media(max-width:1024px){
-  .hero-inner{grid-template-columns:1fr;gap:36px}
-  .hero-sub{max-width:100%}
-  .funnel-kaart{max-width:520px}
-  .diensten-rij{grid-template-columns:repeat(2,1fr)}
-  .vertrouwen-rij{grid-template-columns:repeat(2,1fr)}
-  .cta-slot-inner{flex-direction:column;text-align:center}
-}
-@media(max-width:640px){
-  .hero{padding:40px 0 44px}
-  .hero-tekst h1{font-size:1.55rem}
-  .hero-sub{font-size:.95rem}
-  .header-spoed .spoed-label{display:none}
-  .funnel-kaart{border-radius:var(--r10)}
-  .stap{padding:16px 16px 20px}
-  .voortgang{padding:14px 16px 0}
-  .vstap-lbl{display:none}
-  .pc-rij{grid-template-columns:1fr 1fr}
-  .vrij{grid-template-columns:1fr}
-  .dienst-grid{gap:7px}
-  .d-ikoon{width:34px;height:34px;border-radius:7px}
-  .d-ikoon svg{width:17px;height:17px}
-  .d-naam{font-size:.74rem}
-  .radio-groep{gap:6px}
-  .radio-knop{padding:8px 11px;font-size:.82rem}
-  .diensten-rij{grid-template-columns:1fr;gap:10px}
-  .vertrouwen-rij{grid-template-columns:1fr;gap:14px}
-  .vertrouwen{padding:22px 0}
-  .cta-slot{padding:36px 0}
-  .cta-slot h2{font-size:1.2rem}
-  .btn-cta{width:100%;justify-content:center}
-  .footer-inner{grid-template-columns:1fr;gap:18px}
-  .footer-contact{text-align:left}
-  .sticky-spoed{display:flex}
-}
-</style>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<header class="header" role="banner">
-  <div class="container header-inner">
-    <a href="#" class="logo" aria-label="ElektroKlik – naar de homepagina">
-      <img src="''' + logo_src + '''" alt="ElektroKlik" width="160" height="38">
-    </a>
-    <a href="tel:+31658856729" class="header-spoed" aria-label="Bel ElektroKlik voor spoed">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.48 2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16.27z"/></svg>
-      <span class="spoed-label">Spoed?&nbsp;</span>
-      <span>06 58 85 67 29</span>
-    </a>
-  </div>
-</header>
-
-<main>
-<section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-tekst">
-      <p class="eyebrow">Gecertificeerd elektrotechnisch bedrijf</p>
-      <h1>Elektricien voor uw woning?<br>Wij regelen het snel en netjes.</h1>
-      <p class="hero-sub">Laadpaal, groepenkast, inductie of storing — ElektroKlik helpt u direct verder. Vul uw postcode in en ontvang vrijblijvend een offerte.</p>
-      <ul class="hero-checks" role="list">
-        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#0E7A78"/><polyline points="5,10.5 8.5,14 15,7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>Gecertificeerde monteurs</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#0E7A78"/><polyline points="5,10.5 8.5,14 15,7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>Binnen 1 werkdag reactie</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#0E7A78"/><polyline points="5,10.5 8.5,14 15,7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>Heldere prijs, geen verrassingen</li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#0E7A78"/><polyline points="5,10.5 8.5,14 15,7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>Gratis en vrijblijvend</li>
-      </ul>
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="ElektroKlik – naar de homepagina">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="160" height="40" aria-hidden="true" focusable="false">
+          <polygon points="18,4 10,32 20,32 12,56 32,24 20,24 28,4" fill="#F5A623"/>
+          <text x="38" y="44" font-family="Inter,sans-serif" font-weight="800" font-size="36" fill="#0E7A78" letter-spacing="-1">Elektro</text>
+          <text x="152" y="44" font-family="Inter,sans-serif" font-weight="800" font-size="36" fill="#0E4A72" letter-spacing="-1">Klik</text>
+        </svg>
+      </a>
+      <a href="tel:+31658856729" class="header-spoed" aria-label="Bel ElektroKlik voor spoed">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.48 2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16.27z"/></svg>
+        <span class="spoed-label">Spoed?</span>
+        <span class="spoed-nr">06 58 85 67 29</span>
+      </a>
     </div>
+  </header>
 
-    <div class="funnel-kaart" id="funnelKaart" aria-live="polite">
-      <!-- Voortgangsbalk: 4 stappen -->
-      <div class="voortgang" aria-hidden="true">
-        <div class="vstap actief" id="vstap1"><span class="vstap-num">1</span><span class="vstap-lbl">Postcode</span></div>
-        <div class="vlijn" id="vlijn1"></div>
-        <div class="vstap" id="vstap2"><span class="vstap-num">2</span><span class="vstap-lbl">Dienst</span></div>
-        <div class="vlijn" id="vlijn2"></div>
-        <div class="vstap" id="vstap3"><span class="vstap-num">3</span><span class="vstap-lbl">Situatie</span></div>
-        <div class="vlijn" id="vlijn3"></div>
-        <div class="vstap" id="vstap4"><span class="vstap-num">4</span><span class="vstap-lbl">Gegevens</span></div>
+  <main>
+
+    <!-- HERO + FUNNEL -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+
+        <!-- Links: tekstblok -->
+        <div class="hero-tekst">
+          <p class="hero-eyebrow">Gecertificeerd elektrotechnisch bedrijf</p>
+          <h1 id="hero-heading">Elektricien voor uw woning?<br>Wij regelen het snel en netjes.</h1>
+          <p class="hero-sub">Laadpaal, groepenkast, inductie of storing — ElektroKlik helpt u direct verder. Vul hiernaast uw postcode in en ontvang vrijblijvend een offerte.</p>
+
+          <ul class="hero-keurmerken" role="list" aria-label="Waarom ElektroKlik">
+            <li>
+              <svg class="check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#0E7A78"/><polyline points="5,10.5 8.5,14 15,7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Gecertificeerde monteurs
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#0E7A78"/><polyline points="5,10.5 8.5,14 15,7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Binnen 1 werkdag reactie
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#0E7A78"/><polyline points="5,10.5 8.5,14 15,7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Heldere prijs, geen verrassingen
+            </li>
+            <li>
+              <svg class="check-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#0E7A78"/><polyline points="5,10.5 8.5,14 15,7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Gratis en vrijblijvend
+            </li>
+          </ul>
+        </div>
+
+        <!-- Rechts: Stap-funnel kaart -->
+        <div class="funnel-kaart" id="funnelKaart" aria-live="polite">
+
+          <!-- Voortgangsbalk -->
+          <div class="funnel-voortgang" aria-hidden="true">
+            <div class="voortgang-stap active" id="vstap1">
+              <span class="vstap-num">1</span>
+              <span class="vstap-lbl">Postcode</span>
+            </div>
+            <div class="voortgang-lijn"></div>
+            <div class="voortgang-stap" id="vstap2">
+              <span class="vstap-num">2</span>
+              <span class="vstap-lbl">Dienst</span>
+            </div>
+            <div class="voortgang-lijn"></div>
+            <div class="voortgang-stap" id="vstap3">
+              <span class="vstap-num">3</span>
+              <span class="vstap-lbl">Gegevens</span>
+            </div>
+          </div>
+
+          <form id="aanvraagFormulier" novalidate aria-label="Aanvraagformulier ElektroKlik">
+
+            <!-- ========== STAP 1: Postcode ========== -->
+            <fieldset class="funnel-stap" id="stap1" aria-labelledby="stap1-heading">
+              <div class="stap-header">
+                <h2 id="stap1-heading" class="stap-titel">Wat is uw postcode?</h2>
+                <p class="stap-sub">Zo controleren we of u in ons werkgebied valt.</p>
+              </div>
+
+              <div class="form-groep">
+                <div class="postcode-rij">
+                  <div class="form-groep postcode-veld">
+                    <label for="postcode">Postcode <span class="required-mark" aria-hidden="true">*</span></label>
+                    <input type="text" id="postcode" name="postcode" placeholder="1234 AB" maxlength="7" autocomplete="postal-code" aria-required="true" inputmode="text" />
+                    <p class="veld-fout verborgen" id="error-postcode" role="alert">Vul een geldige postcode in (bijv. 3811 AB).</p>
+                  </div>
+                  <div class="form-groep hnr-veld">
+                    <label for="huisnummer">Huisnummer <span class="required-mark" aria-hidden="true">*</span></label>
+                    <input type="text" id="huisnummer" name="huisnummer" placeholder="12 A" autocomplete="address-line2" aria-required="true" />
+                    <p class="veld-fout verborgen" id="error-huisnummer" role="alert">Vul uw huisnummer in.</p>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="btn-volgende" id="btnStap1" onclick="gaNaarStap(2)">
+                Volgende stap
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </fieldset>
+
+            <!-- ========== STAP 2: Dienst kiezen ========== -->
+            <fieldset class="funnel-stap verborgen" id="stap2" aria-labelledby="stap2-heading">
+              <div class="stap-header">
+                <button type="button" class="terug-knop" onclick="gaNaarStap(1)" aria-label="Terug naar stap 1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+                  Terug
+                </button>
+                <h2 id="stap2-heading" class="stap-titel">Wat mag ik voor u doen?</h2>
+                <p class="stap-sub">Kies de dienst waarvoor u een offerte wilt.</p>
+              </div>
+
+              <div class="dienst-keuze-grid" role="radiogroup" aria-label="Kies een dienst" aria-required="true">
+                <label class="dienst-keuze-kaart">
+                  <input type="radio" name="dienst" value="laadpaal" />
+                  <span class="dienst-ikoon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="6" x2="12" y2="10"/><line x1="10" y1="8" x2="14" y2="8"/><line x1="10" y1="14" x2="14" y2="14"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+                  </span>
+                  <span class="dienst-naam">Laadpaal installatie</span>
+                </label>
+                <label class="dienst-keuze-kaart">
+                  <input type="radio" name="dienst" value="groepenkast" />
+                  <span class="dienst-ikoon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="21"/></svg>
+                  </span>
+                  <span class="dienst-naam">Groepenkast</span>
+                </label>
+                <label class="dienst-keuze-kaart">
+                  <input type="radio" name="dienst" value="inductie" />
+                  <span class="dienst-ikoon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/></svg>
+                  </span>
+                  <span class="dienst-naam">Inductiekookplaat</span>
+                </label>
+                <label class="dienst-keuze-kaart">
+                  <input type="radio" name="dienst" value="perilex" />
+                  <span class="dienst-ikoon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.5"/><circle cx="15" cy="10" r="1.5"/><circle cx="12" cy="15" r="1.5"/></svg>
+                  </span>
+                  <span class="dienst-naam">Perilex aansluiting</span>
+                </label>
+                <label class="dienst-keuze-kaart dienst-storing">
+                  <input type="radio" name="dienst" value="storing" />
+                  <span class="dienst-ikoon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  </span>
+                  <span class="dienst-naam">Elektra storing</span>
+                </label>
+              </div>
+              <p class="veld-fout verborgen" id="error-dienst" role="alert">Kies een dienst om verder te gaan.</p>
+
+              <!-- Spoed-melding (verschijnt bij 'storing') -->
+              <div class="spoed-melding verborgen" id="spoedMelding" role="note">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <span>Heeft u <strong>spoed</strong>? Bel ons direct: <a href="tel:+31658856729">06 58 85 67 29</a></span>
+              </div>
+
+              <button type="button" class="btn-volgende" id="btnStap2" onclick="gaNaarStap(3)">
+                Volgende stap
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </fieldset>
+
+            <!-- ========== STAP 3: Contactgegevens ========== -->
+            <fieldset class="funnel-stap verborgen" id="stap3" aria-labelledby="stap3-heading">
+              <div class="stap-header">
+                <button type="button" class="terug-knop" onclick="gaNaarStap(2)" aria-label="Terug naar stap 2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+                  Terug
+                </button>
+                <h2 id="stap3-heading" class="stap-titel">Uw gegevens</h2>
+                <p class="stap-sub">Wij nemen binnen 1 werkdag contact op.</p>
+              </div>
+
+              <div class="form-groep">
+                <label for="naam">Naam <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="text" id="naam" name="naam" required autocomplete="name" placeholder="Voor- en achternaam" aria-required="true" />
+                <p class="veld-fout verborgen" id="error-naam" role="alert">Vul uw naam in.</p>
+              </div>
+
+              <div class="form-rij">
+                <div class="form-groep">
+                  <label for="telefoon">Telefoonnummer <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="tel" id="telefoon" name="telefoon" required autocomplete="tel" placeholder="06 - XX XX XX XX" aria-required="true" />
+                  <p class="veld-fout verborgen" id="error-telefoon" role="alert">Vul een geldig telefoonnummer in.</p>
+                </div>
+                <div class="form-groep">
+                  <label for="email">E-mailadres <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" required autocomplete="email" placeholder="uwmail@voorbeeld.nl" aria-required="true" />
+                  <p class="veld-fout verborgen" id="error-email" role="alert">Vul een geldig e-mailadres in.</p>
+                </div>
+              </div>
+
+              <div class="form-groep">
+                <label for="omschrijving">Korte omschrijving <span class="required-mark" aria-hidden="true">*</span></label>
+                <textarea id="omschrijving" name="omschrijving" required rows="3" placeholder="Beschrijf in een paar zinnen wat u wilt laten doen." aria-required="true"></textarea>
+                <p class="veld-fout verborgen" id="error-omschrijving" role="alert">Voeg een korte omschrijving toe (min. 10 tekens).</p>
+              </div>
+
+              <div class="form-groep privacy-rij">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="privacy" id="privacy" required aria-required="true" />
+                  <span>Ik ga akkoord met de <a href="/privacy" target="_blank" rel="noopener">privacyverklaring</a>.</span>
+                </label>
+                <p class="veld-fout verborgen" id="error-privacy" role="alert">U moet akkoord gaan met de privacyverklaring.</p>
+              </div>
+
+              <button type="submit" class="btn-volgende btn-verstuur" id="submitBtn">
+                <span class="btn-text">Aanvraag versturen</span>
+                <span class="btn-loading verborgen" aria-live="polite">Bezig…</span>
+              </button>
+              <p class="form-sub-noot">Gratis en vrijblijvend · Geen verplichtingen</p>
+            </fieldset>
+
+          </form>
+
+          <!-- Succesmelding -->
+          <div id="form-succes" class="form-succes verborgen" role="alert" aria-live="assertive">
+            <div class="succes-ikoon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0E7A78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11.5 14.5 16 9"/></svg>
+            </div>
+            <h3>Aanvraag ontvangen!</h3>
+            <p>Bedankt. Wij nemen binnen <strong>1 werkdag</strong> contact met u op.</p>
+            <p class="succes-spoed">Tussendoor vragen? <a href="tel:+31658856729">06 58 85 67 29</a></p>
+          </div>
+
+        </div><!-- /funnel-kaart -->
+      </div><!-- /hero-inner -->
+    </section>
+
+    <!-- VERTROUWENSSTROOK -->
+    <section class="vertrouwen-strook" aria-label="Waarom ElektroKlik">
+      <div class="container vertrouwen-inner">
+        <div class="vertrouwen-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E7A78" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div>
+            <strong>Gecertificeerd vakmanschap</strong>
+            <span>Werkt conform NEN-normen</span>
+          </div>
+        </div>
+        <div class="vertrouwen-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E7A78" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <div>
+            <strong>Heldere prijs</strong>
+            <span>Geen verrassingen achteraf</span>
+          </div>
+        </div>
+        <div class="vertrouwen-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E7A78" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <strong>Binnen 1 werkdag reactie</strong>
+            <span>Snel ingepland op afspraak</span>
+          </div>
+        </div>
+        <div class="vertrouwen-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E7A78" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <div>
+            <strong>Netjes afgewerkt</strong>
+            <span>Uw woning laten wij op zijn best</span>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <form id="aanvraagForm" novalidate>
+    <!-- DIENSTEN (compact) -->
+    <section class="diensten section" aria-labelledby="diensten-heading">
+      <div class="container">
+        <h2 id="diensten-heading">Waarvoor kunt u bij ons terecht?</h2>
+        <div class="diensten-rij">
+          <div class="dienst-item">
+            <div class="dienst-item-ikoon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="6" x2="12" y2="10"/><line x1="10" y1="8" x2="14" y2="8"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+            </div>
+            <div>
+              <h3>Laadpaal installatie</h3>
+              <p>Thuis laden, veilig en efficiënt. Voor alle merken en types, 1-fase en 3-fase.</p>
+            </div>
+          </div>
+          <div class="dienst-item">
+            <div class="dienst-item-ikoon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="21"/></svg>
+            </div>
+            <div>
+              <h3>Groepenkast & meterkast</h3>
+              <p>Extra groep aanleggen, kookgroep, uitbreiding of vervanging van uw meterkast.</p>
+            </div>
+          </div>
+          <div class="dienst-item">
+            <div class="dienst-item-ikoon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/></svg>
+            </div>
+            <div>
+              <h3>Inductiekookplaat & Perilex</h3>
+              <p>Aansluiting van uw inductiekookplaat inclusief Perilex aansluiting indien nodig.</p>
+            </div>
+          </div>
+          <div class="dienst-item">
+            <div class="dienst-item-ikoon storing-ikoon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div>
+              <h3>Elektra storing</h3>
+              <p>Groep die uitvalt, stopcontact dat niet werkt of kortsluiting? Wij lossen het op.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- STAP 1: Postcode -->
-        <fieldset class="stap" id="stap1">
-          <div class="stap-kop">
-            <h2 class="stap-titel">Wat is uw postcode?</h2>
-            <p class="stap-sub">Zo controleren we of u in ons werkgebied valt.</p>
-          </div>
-          <div class="pc-rij">
-            <div class="veld">
-              <label for="postcode">Postcode <span class="req">*</span></label>
-              <input type="text" id="postcode" name="postcode" placeholder="1234 AB" maxlength="7" autocomplete="postal-code" inputmode="text">
-              <span class="veld-fout" id="fout-postcode">Vul een geldige postcode in (bijv. 3811 AB).</span>
-            </div>
-            <div class="veld">
-              <label for="huisnummer">Huisnummer <span class="req">*</span></label>
-              <input type="text" id="huisnummer" name="huisnummer" placeholder="12 A" autocomplete="address-line2">
-              <span class="veld-fout" id="fout-huisnummer">Vul uw huisnummer in.</span>
-            </div>
-          </div>
-          <button type="button" class="btn-volgende" onclick="naarStap(2)">Volgende stap <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
-        </fieldset>
+    <!-- FAQ -->
+    <section class="faq section section-alt" aria-labelledby="faq-heading" id="faq">
+      <div class="container faq-inner">
+        <h2 id="faq-heading">Veelgestelde vragen</h2>
 
-        <!-- STAP 2: Dienst kiezen -->
-        <fieldset class="stap verborgen" id="stap2">
-          <div class="stap-kop">
-            <button type="button" class="terug" onclick="naarStap(1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>Terug</button>
-            <h2 class="stap-titel">Wat mag ik voor u doen?</h2>
-            <p class="stap-sub">Kies de dienst waarvoor u een offerte wilt.</p>
-          </div>
-          <div class="dienst-grid" role="radiogroup" aria-label="Kies een dienst">
-            <label class="dienst-kaart" id="dk-laadpaal">
-              <input type="radio" name="dienst" value="laadpaal">
-              <div class="d-ikoon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="6" x2="12" y2="10"/><line x1="10" y1="8" x2="14" y2="8"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
-              <span class="d-naam">Laadpaal installatie</span>
-            </label>
-            <label class="dienst-kaart" id="dk-groepenkast">
-              <input type="radio" name="dienst" value="groepenkast">
-              <div class="d-ikoon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="21"/></svg></div>
-              <span class="d-naam">Groepenkast</span>
-            </label>
-            <label class="dienst-kaart" id="dk-inductie">
-              <input type="radio" name="dienst" value="inductie">
-              <div class="d-ikoon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/></svg></div>
-              <span class="d-naam">Inductiekookplaat</span>
-            </label>
-            <label class="dienst-kaart" id="dk-perilex">
-              <input type="radio" name="dienst" value="perilex">
-              <div class="d-ikoon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.5"/><circle cx="15" cy="10" r="1.5"/><circle cx="12" cy="15" r="1.5"/></svg></div>
-              <span class="d-naam">Perilex aansluiting</span>
-            </label>
-            <label class="dienst-kaart storing-kaart" id="dk-storing">
-              <input type="radio" name="dienst" value="storing">
-              <div class="d-ikoon storing"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-              <span class="d-naam">Elektra storing</span>
-            </label>
-          </div>
-          <span class="veld-fout" id="fout-dienst">Kies een dienst om verder te gaan.</span>
-          <div class="spoed-melding verborgen" id="spoedMelding">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            <span>Heeft u <strong>spoed</strong>? Bel ons direct: <a href="tel:+31658856729">06 58 85 67 29</a></span>
-          </div>
-          <button type="button" class="btn-volgende" onclick="naarStap(3)">Volgende stap <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
-        </fieldset>
+        <div class="faq-list">
 
-        <!-- STAP 3: Dienstspecifieke vragen -->
-        <fieldset class="stap verborgen" id="stap3">
-          <div class="stap-kop">
-            <button type="button" class="terug" onclick="naarStap(2)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>Terug</button>
-            <h2 class="stap-titel" id="stap3Titel">Uw situatie</h2>
-            <p class="stap-sub">Zo kunnen wij u een betere offerte geven.</p>
-          </div>
-
-          <!-- === LAADPAAL VRAGEN === -->
-          <div id="vragen-laadpaal" class="dienst-vragen verborgen">
-            <div class="veld">
-              <label>Voor welk automerk is de laadpaal bedoeld?</label>
-              <input type="text" name="lp_automerk" placeholder="Bijv. Tesla, Volkswagen, Volvo…">
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Heeft u een slimme meter?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Slimme meter">
-                <label class="radio-knop"><input type="radio" name="lp_slimmemeter" value="Ja">Ja</label>
-                <label class="radio-knop"><input type="radio" name="lp_slimmemeter" value="Nee">Nee</label>
-                <label class="radio-knop"><input type="radio" name="lp_slimmemeter" value="Weet ik niet">Weet ik niet</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Wilt u laadkosten registreren of declareren?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Laadkosten registreren">
-                <label class="radio-knop"><input type="radio" name="lp_registratie" value="Ja">Ja</label>
-                <label class="radio-knop"><input type="radio" name="lp_registratie" value="Nee">Nee</label>
-                <label class="radio-knop"><input type="radio" name="lp_registratie" value="Weet ik niet">Weet ik niet</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Welke stroomaansluiting heeft u?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Stroomaansluiting">
-                <label class="radio-knop"><input type="radio" name="lp_fase" value="1-fase">1-fase</label>
-                <label class="radio-knop"><input type="radio" name="lp_fase" value="3-fase">3-fase</label>
-                <label class="radio-knop"><input type="radio" name="lp_fase" value="Weet ik niet – graag advies">Weet ik niet – graag advies</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Heeft uw woning een kruipruimte?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Kruipruimte">
-                <label class="radio-knop"><input type="radio" name="lp_kruipruimte" value="Ja">Ja</label>
-                <label class="radio-knop"><input type="radio" name="lp_kruipruimte" value="Nee">Nee</label>
-                <label class="radio-knop"><input type="radio" name="lp_kruipruimte" value="Weet ik niet">Weet ik niet</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Gewenste montage (optioneel)</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Montage type">
-                <label class="radio-knop"><input type="radio" name="lp_montage" value="Wandmontage">Wandmontage</label>
-                <label class="radio-knop"><input type="radio" name="lp_montage" value="Paal – harde ondergrond">Paal, harde ondergrond</label>
-                <label class="radio-knop"><input type="radio" name="lp_montage" value="Paal – zachte ondergrond">Paal, zachte ondergrond</label>
-              </div>
+          <div class="faq-item">
+            <button class="faq-vraag" aria-expanded="false" aria-controls="faq-1">
+              Hoe snel krijg ik een reactie na mijn aanvraag?
+              <svg class="faq-pijl" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-antwoord" id="faq-1" hidden>
+              <p>Wij streven ernaar om binnen <strong>1 werkdag</strong> te reageren. In de meeste gevallen nemen wij al dezelfde dag contact op om de situatie door te nemen en een afspraak in te plannen.</p>
             </div>
           </div>
 
-          <!-- === GROEPENKAST VRAGEN === -->
-          <div id="vragen-groepenkast" class="dienst-vragen verborgen">
-            <div class="veld">
-              <p class="veld-sectie-label">Wat wilt u laten doen?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Groepenkast werkzaamheden">
-                <label class="radio-knop"><input type="radio" name="gk_werk" value="Extra groep aanleggen">Extra groep aanleggen</label>
-                <label class="radio-knop"><input type="radio" name="gk_werk" value="Kookgroep aanleggen">Kookgroep aanleggen</label>
-                <label class="radio-knop"><input type="radio" name="gk_werk" value="Groepenkast uitbreiden">Groepenkast uitbreiden</label>
-                <label class="radio-knop"><input type="radio" name="gk_werk" value="Groepenkast vervangen">Groepenkast vervangen</label>
-                <label class="radio-knop"><input type="radio" name="gk_werk" value="Weet ik niet – graag advies">Weet ik niet – graag advies</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Wat is uw huidige stroomaansluiting?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Stroomaansluiting groepenkast">
-                <label class="radio-knop"><input type="radio" name="gk_fase" value="1-fase (25A)">1-fase (25A)</label>
-                <label class="radio-knop"><input type="radio" name="gk_fase" value="3-fase (25A)">3-fase (25A)</label>
-                <label class="radio-knop"><input type="radio" name="gk_fase" value="3-fase (3x25A)">3-fase (3×25A)</label>
-                <label class="radio-knop"><input type="radio" name="gk_fase" value="Weet ik niet">Weet ik niet</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Heeft uw woning een kruipruimte?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Kruipruimte groepenkast">
-                <label class="radio-knop"><input type="radio" name="gk_kruipruimte" value="Ja">Ja</label>
-                <label class="radio-knop"><input type="radio" name="gk_kruipruimte" value="Nee">Nee</label>
-                <label class="radio-knop"><input type="radio" name="gk_kruipruimte" value="Weet ik niet">Weet ik niet</label>
-              </div>
+          <div class="faq-item">
+            <button class="faq-vraag" aria-expanded="false" aria-controls="faq-2">
+              Wat kost een laadpaal installatie?
+              <svg class="faq-pijl" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-antwoord" id="faq-2" hidden>
+              <p>De kosten zijn afhankelijk van uw situatie: de afstand van de meterkast, het type montage en of er uitbreidingen nodig zijn. Na uw aanvraag ontvangt u een duidelijke, transparante offerte zonder verborgen kosten.</p>
             </div>
           </div>
 
-          <!-- === INDUCTIE VRAGEN === -->
-          <div id="vragen-inductie" class="dienst-vragen verborgen">
-            <div class="veld">
-              <p class="veld-sectie-label">Heeft u al een inductiekookplaat?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Inductiekookplaat aanwezig">
-                <label class="radio-knop"><input type="radio" name="in_kookplaat" value="Ja, moet alleen aangesloten worden">Ja, moet alleen aangesloten worden</label>
-                <label class="radio-knop"><input type="radio" name="in_kookplaat" value="Nee, nog niet">Nee, nog niet</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Is er al een Perilex aansluiting aanwezig?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Perilex aanwezig">
-                <label class="radio-knop"><input type="radio" name="in_perilex" value="Ja">Ja</label>
-                <label class="radio-knop"><input type="radio" name="in_perilex" value="Nee – moet nog aangelegd worden">Nee – moet nog aangelegd worden</label>
-                <label class="radio-knop"><input type="radio" name="in_perilex" value="Weet ik niet">Weet ik niet</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Wat is uw huidige stroomaansluiting?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Stroomaansluiting inductie">
-                <label class="radio-knop"><input type="radio" name="in_fase" value="1-fase">1-fase</label>
-                <label class="radio-knop"><input type="radio" name="in_fase" value="3-fase">3-fase</label>
-                <label class="radio-knop"><input type="radio" name="in_fase" value="Weet ik niet">Weet ik niet</label>
-              </div>
+          <div class="faq-item">
+            <button class="faq-vraag" aria-expanded="false" aria-controls="faq-3">
+              Zijn uw monteurs gecertificeerd?
+              <svg class="faq-pijl" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-antwoord" id="faq-3" hidden>
+              <p>Ja. Onze monteurs zijn gecertificeerd en werken conform de geldende NEN-normen. Dit is van belang voor uw veiligheid, uw verzekering en de waarde van uw woning.</p>
             </div>
           </div>
 
-          <!-- === PERILEX VRAGEN === -->
-          <div id="vragen-perilex" class="dienst-vragen verborgen">
-            <div class="veld">
-              <p class="veld-sectie-label">Waarvoor heeft u de Perilex aansluiting nodig?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Doel Perilex">
-                <label class="radio-knop"><input type="radio" name="px_doel" value="Inductiekookplaat">Inductiekookplaat</label>
-                <label class="radio-knop"><input type="radio" name="px_doel" value="Wasdroger">Wasdroger</label>
-                <label class="radio-knop"><input type="radio" name="px_doel" value="Anders">Anders</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Is er al een kookgroep (16A) aanwezig in de meterkast?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Kookgroep aanwezig">
-                <label class="radio-knop"><input type="radio" name="px_kookgroep" value="Ja">Ja</label>
-                <label class="radio-knop"><input type="radio" name="px_kookgroep" value="Nee">Nee</label>
-                <label class="radio-knop"><input type="radio" name="px_kookgroep" value="Weet ik niet">Weet ik niet</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Wat is uw huidige stroomaansluiting?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Stroomaansluiting perilex">
-                <label class="radio-knop"><input type="radio" name="px_fase" value="1-fase">1-fase</label>
-                <label class="radio-knop"><input type="radio" name="px_fase" value="3-fase">3-fase</label>
-                <label class="radio-knop"><input type="radio" name="px_fase" value="Weet ik niet">Weet ik niet</label>
-              </div>
+          <div class="faq-item">
+            <button class="faq-vraag" aria-expanded="false" aria-controls="faq-4">
+              In welke regio werkt ElektroKlik?
+              <svg class="faq-pijl" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-antwoord" id="faq-4" hidden>
+              <p>ElektroKlik is actief in Amersfoort en omgeving: Leusden, Soest, Nijkerk, Hoevelaken, Baarn, Bunschoten en directe omgeving. Vul uw postcode in bij de aanvraag, dan controleren wij direct of wij bij u in de buurt kunnen werken.</p>
             </div>
           </div>
 
-          <!-- === STORING VRAGEN === -->
-          <div id="vragen-storing" class="dienst-vragen verborgen">
-            <div class="veld">
-              <p class="veld-sectie-label">Wat is het probleem?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Soort storing">
-                <label class="radio-knop"><input type="radio" name="st_probleem" value="Groep valt steeds uit">Groep valt steeds uit</label>
-                <label class="radio-knop"><input type="radio" name="st_probleem" value="Stopcontact werkt niet">Stopcontact werkt niet</label>
-                <label class="radio-knop"><input type="radio" name="st_probleem" value="Licht doet het niet">Licht doet het niet</label>
-                <label class="radio-knop"><input type="radio" name="st_probleem" value="Kortsluiting">Kortsluiting</label>
-                <label class="radio-knop"><input type="radio" name="st_probleem" value="Zekering springt er uit">Zekering springt er uit</label>
-                <label class="radio-knop"><input type="radio" name="st_probleem" value="Anders">Anders</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Hoe lang speelt dit al?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Duur storing">
-                <label class="radio-knop"><input type="radio" name="st_duur" value="Net begonnen">Net begonnen</label>
-                <label class="radio-knop"><input type="radio" name="st_duur" value="Paar dagen">Paar dagen</label>
-                <label class="radio-knop"><input type="radio" name="st_duur" value="Al langer">Al langer</label>
-              </div>
-            </div>
-            <div class="veld">
-              <p class="veld-sectie-label">Is dit spoed?</p>
-              <div class="radio-groep" role="radiogroup" aria-label="Spoed storing">
-                <label class="radio-knop"><input type="radio" name="st_spoed" value="Ja – zo snel mogelijk">Ja – zo snel mogelijk</label>
-                <label class="radio-knop"><input type="radio" name="st_spoed" value="Nee – op afspraak is prima">Nee – op afspraak is prima</label>
-              </div>
-            </div>
-            <div class="spoed-melding" id="spoedMelding2" style="display:none">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              <span>Heeft u spoed? Bel ons direct: <a href="tel:+31658856729">06 58 85 67 29</a></span>
+          <div class="faq-item">
+            <button class="faq-vraag" aria-expanded="false" aria-controls="faq-5">
+              Is de aanvraag vrijblijvend?
+              <svg class="faq-pijl" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-antwoord" id="faq-5" hidden>
+              <p>Volledig vrijblijvend. U verplicht zich tot niets door een aanvraag te doen. Pas als u akkoord gaat met de offerte en een afspraak inplant, gaan wij aan de slag.</p>
             </div>
           </div>
 
-          <button type="button" class="btn-volgende" onclick="naarStap(4)">Volgende stap <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
-        </fieldset>
+        </div>
+      </div>
+    </section>
 
-        <!-- STAP 4: Contactgegevens -->
-        <fieldset class="stap verborgen" id="stap4">
-          <div class="stap-kop">
-            <button type="button" class="terug" onclick="naarStap(3)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>Terug</button>
-            <h2 class="stap-titel">Uw gegevens</h2>
-            <p class="stap-sub">Wij nemen binnen 1 werkdag contact op.</p>
-          </div>
-          <div class="veld">
-            <label for="naam">Naam <span class="req">*</span></label>
-            <input type="text" id="naam" name="naam" placeholder="Voor- en achternaam" autocomplete="name">
-            <span class="veld-fout" id="fout-naam">Vul uw naam in.</span>
-          </div>
-          <div class="vrij">
-            <div class="veld">
-              <label for="telefoon">Telefoonnummer <span class="req">*</span></label>
-              <input type="tel" id="telefoon" name="telefoon" placeholder="06 - XX XX XX XX" autocomplete="tel">
-              <span class="veld-fout" id="fout-telefoon">Vul een geldig telefoonnummer in.</span>
-            </div>
-            <div class="veld">
-              <label for="email">E-mailadres <span class="req">*</span></label>
-              <input type="email" id="email" name="email" placeholder="uwmail@voorbeeld.nl" autocomplete="email">
-              <span class="veld-fout" id="fout-email">Vul een geldig e-mailadres in.</span>
-            </div>
-          </div>
-          <div class="veld">
-            <label for="omschrijving">Aanvullende informatie (optioneel)</label>
-            <textarea id="omschrijving" name="omschrijving" rows="3" placeholder="Heeft u nog iets toe te voegen?"></textarea>
-          </div>
-          <div class="veld privacy-veld">
-            <label class="cb-label">
-              <input type="checkbox" id="privacy" name="privacy">
-              <span>Ik ga akkoord met de <a href="/privacy" target="_blank" rel="noopener">privacyverklaring</a>.</span>
-            </label>
-            <span class="veld-fout" id="fout-privacy">U moet akkoord gaan met de privacyverklaring.</span>
-          </div>
-          <button type="submit" class="btn-volgende btn-verstuur" id="submitBtn">
-            <span id="btnTekst">Aanvraag versturen</span>
-            <span id="btnLaad" class="verborgen">Bezig…</span>
-          </button>
-          <p class="form-noot">Gratis en vrijblijvend · Geen verplichtingen</p>
-        </fieldset>
+    <!-- AFSLUITENDE CTA -->
+    <section class="cta-slot" aria-labelledby="cta-slot-heading">
+      <div class="container cta-slot-inner">
+        <div class="cta-slot-tekst">
+          <h2 id="cta-slot-heading">Klaar om uw klus te laten uitvoeren?</h2>
+          <p>Doe uw aanvraag in minder dan 2 minuten. Gratis en vrijblijvend.</p>
+        </div>
+        <a href="#funnelKaart" class="btn-cta-slot" onclick="scrollNaarFunnel(event)">
+          Aanvraag doen →
+        </a>
+      </div>
+    </section>
 
-      </form>
+  </main>
 
-      <div id="formSucces" class="form-succes verborgen" role="alert">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11.5 14.5 16 9"/></svg>
-        <h3>Aanvraag ontvangen!</h3>
-        <p>Bedankt. Wij nemen binnen <strong>1 werkdag</strong> contact met u op.</p>
-        <p>Tussendoor vragen? <a href="tel:+31658856729">06 58 85 67 29</a></p>
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="130" height="33" aria-hidden="true" focusable="false">
+          <polygon points="18,4 10,32 20,32 12,56 32,24 20,24 28,4" fill="#F5A623"/>
+          <text x="38" y="44" font-family="Inter,sans-serif" font-weight="800" font-size="36" fill="#fff" letter-spacing="-1">Elektro</text>
+          <text x="152" y="44" font-family="Inter,sans-serif" font-weight="800" font-size="36" fill="#93c5d0" letter-spacing="-1">Klik</text>
+        </svg>
+        <p>Gecertificeerd elektrotechnisch bedrijf · Amersfoort e.o.</p>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Spoed?</strong> Bel direct: <a href="tel:+31658856729">06 58 85 67 29</a></p>
+        <p><a href="mailto:info@elektroklik.nl">info@elektroklik.nl</a></p>
+        <p><a href="/privacy">Privacyverklaring</a></p>
       </div>
     </div>
-  </div>
-</section>
-
-<div class="vertrouwen">
-  <div class="container vertrouwen-rij">
-    <div class="vt-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div><strong>Gecertificeerd vakmanschap</strong><span>Werkt conform NEN-normen</span></div></div>
-    <div class="vt-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><div><strong>Heldere prijs</strong><span>Geen verrassingen achteraf</span></div></div>
-    <div class="vt-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><strong>Binnen 1 werkdag reactie</strong><span>Snel ingepland op afspraak</span></div></div>
-    <div class="vt-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><div><strong>Netjes afgewerkt</strong><span>Uw woning op zijn best</span></div></div>
-  </div>
-</div>
-
-<section class="sectie diensten-sectie">
-  <div class="container">
-    <h2>Waarvoor kunt u bij ons terecht?</h2>
-    <div class="diensten-rij">
-      <div class="ds-kaart"><div class="ds-ikoon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="6" x2="12" y2="10"/><line x1="10" y1="8" x2="14" y2="8"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div><h3>Laadpaal installatie</h3><p>Thuis laden, veilig en efficiënt. Voor alle merken en types, 1-fase en 3-fase.</p></div>
-      <div class="ds-kaart"><div class="ds-ikoon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="21"/></svg></div><h3>Groepenkast &amp; meterkast</h3><p>Extra groep aanleggen, kookgroep, uitbreiding of vervanging van uw meterkast.</p></div>
-      <div class="ds-kaart"><div class="ds-ikoon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/></svg></div><h3>Inductiekookplaat &amp; Perilex</h3><p>Aansluiting van uw inductiekookplaat inclusief Perilex aansluiting indien nodig.</p></div>
-      <div class="ds-kaart"><div class="ds-ikoon storing"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Elektra storing</h3><p>Groep die uitvalt, stopcontact dat niet werkt of kortsluiting? Wij lossen het op.</p></div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> ElektroKlik. Alle rechten voorbehouden.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="sectie sectie-alt" id="faq">
-  <div class="container faq-inner">
-    <h2>Veelgestelde vragen</h2>
-    <div class="faq-lijst">
-      <div class="faq-item"><button class="faq-vraag" aria-expanded="false" aria-controls="faq1">Hoe snel krijg ik een reactie na mijn aanvraag?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-antwoord" id="faq1" hidden><p>Wij streven ernaar om binnen <strong>1 werkdag</strong> te reageren. In de meeste gevallen nemen wij al dezelfde dag contact op om de situatie door te nemen en een afspraak in te plannen.</p></div></div>
-      <div class="faq-item"><button class="faq-vraag" aria-expanded="false" aria-controls="faq2">Wat kost een laadpaal installatie?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-antwoord" id="faq2" hidden><p>De kosten zijn afhankelijk van uw situatie: de afstand van de meterkast, het type montage en of er uitbreidingen nodig zijn. Na uw aanvraag ontvangt u een duidelijke, transparante offerte zonder verborgen kosten.</p></div></div>
-      <div class="faq-item"><button class="faq-vraag" aria-expanded="false" aria-controls="faq3">Zijn uw monteurs gecertificeerd?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-antwoord" id="faq3" hidden><p>Ja. Onze monteurs zijn gecertificeerd en werken conform de geldende NEN-normen. Dit is van belang voor uw veiligheid, uw verzekering en de waarde van uw woning.</p></div></div>
-      <div class="faq-item"><button class="faq-vraag" aria-expanded="false" aria-controls="faq4">In welke regio werkt ElektroKlik?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-antwoord" id="faq4" hidden><p>ElektroKlik is actief in Amersfoort en omgeving: Leusden, Soest, Nijkerk, Hoevelaken, Baarn, Bunschoten en directe omgeving. Vul uw postcode in bij de aanvraag, dan controleren wij direct of wij bij u kunnen werken.</p></div></div>
-      <div class="faq-item"><button class="faq-vraag" aria-expanded="false" aria-controls="faq5">Is de aanvraag vrijblijvend?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-antwoord" id="faq5" hidden><p>Volledig vrijblijvend. U verplicht zich tot niets door een aanvraag te doen. Pas als u akkoord gaat met de offerte en een afspraak inplant, gaan wij aan de slag.</p></div></div>
-    </div>
-  </div>
-</section>
+  <!-- Sticky bel-knop mobiel (alleen voor spoed) -->
+  <a href="tel:+31658856729" class="sticky-spoed" aria-label="Bel ElektroKlik direct voor spoed">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.48 2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16.27z"/></svg>
+    Spoed bellen
+  </a>
 
-<section class="cta-slot">
-  <div class="container cta-slot-inner">
-    <div><h2>Klaar om uw klus te laten uitvoeren?</h2><p>Doe uw aanvraag in minder dan 2 minuten. Gratis en vrijblijvend.</p></div>
-    <a href="#funnelKaart" class="btn-cta" id="ctaKnop">Aanvraag doen →</a>
-  </div>
-</section>
-</main>
-
-<footer class="footer" role="contentinfo">
-  <div class="container footer-inner">
-    <div class="footer-merk">
-      <img src="''' + logo_src + '''" alt="ElektroKlik" width="140" height="34">
-      <p>Gecertificeerd elektrotechnisch bedrijf · Amersfoort e.o.</p>
-    </div>
-    <div class="footer-contact">
-      <p><strong>Spoed?</strong> Bel direct: <a href="tel:+31658856729">06 58 85 67 29</a></p>
-      <p><a href="mailto:info@elektroklik.nl">info@elektroklik.nl</a></p>
-      <p><a href="/privacy">Privacyverklaring</a></p>
-    </div>
-  </div>
-  <div class="footer-bottom"><div class="container"><p>&copy; <span id="jaar"></span> ElektroKlik. Alle rechten voorbehouden.</p></div></div>
-</footer>
-
-<a href="tel:+31658856729" class="sticky-spoed" aria-label="Bel ElektroKlik direct voor spoed">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.48 2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16.27z"/></svg>
-  Spoed bellen
-</a>
-
-<script>
-(function(){
-'use strict';
-
-var huidigeStap = 1;
-var gekozenDienst = null;
-
-var dienstTitels = {
-  laadpaal: 'Laadpaal – uw situatie',
-  groepenkast: 'Groepenkast – uw situatie',
-  inductie: 'Inductiekookplaat – uw situatie',
-  perilex: 'Perilex aansluiting – uw situatie',
-  storing: 'Elektra storing – uw situatie'
-};
-
-window.naarStap = function(nr) {
-  if (nr > huidigeStap && !valideer(huidigeStap)) return;
-  toon(nr);
-};
-
-function toon(nr) {
-  // Verberg alle stappen 1-4
-  [1,2,3,4].forEach(function(i){
-    var el = document.getElementById('stap'+i);
-    if (el) el.classList.add('verborgen');
-  });
-  var doel = document.getElementById('stap'+nr);
-  if (doel) {
-    doel.classList.remove('verborgen');
-    var input = doel.querySelector('input:not([type=radio]):not([type=checkbox]), textarea');
-    if (input) setTimeout(function(){ input.focus(); }, 60);
-  }
-  if (window.innerWidth <= 640) {
-    var kaart = document.getElementById('funnelKaart');
-    if (kaart) setTimeout(function(){ kaart.scrollIntoView({behavior:'smooth',block:'start'}); }, 60);
-  }
-  huidigeStap = nr;
-  updateVoortgang(nr);
-}
-
-function updateVoortgang(actief) {
-  [1,2,3,4].forEach(function(i){
-    var el = document.getElementById('vstap'+i);
-    if (!el) return;
-    el.classList.remove('actief','klaar');
-    if (i < actief) el.classList.add('klaar');
-    if (i === actief) el.classList.add('actief');
-  });
-  [1,2,3].forEach(function(i){
-    var lijn = document.getElementById('vlijn'+i);
-    if (!lijn) return;
-    lijn.classList.toggle('klaar', actief > i+1);
-  });
-}
-
-function valideer(stap) {
-  if (stap === 1) return valideerStap1();
-  if (stap === 2) return valideerStap2();
-  if (stap === 3) return true; // Stap 3 vragen zijn allemaal optioneel
-  if (stap === 4) return valideerStap4();
-  return true;
-}
-
-function valideerStap1() {
-  var ok = true;
-  var pc = document.getElementById('postcode');
-  var pcV = pc ? pc.value.trim().replace(/\\s/g,'') : '';
-  if (!pc || !/^[1-9][0-9]{3}[a-zA-Z]{2}$/.test(pcV)) { setFout(pc,'fout-postcode',true); ok=false; }
-  else { setFout(pc,'fout-postcode',false); }
-  var hnr = document.getElementById('huisnummer');
-  if (!hnr || hnr.value.trim().length < 1) { setFout(hnr,'fout-huisnummer',true); ok=false; }
-  else { setFout(hnr,'fout-huisnummer',false); }
-  return ok;
-}
-
-function valideerStap2() {
-  var gekozen = document.querySelector('input[name=dienst]:checked');
-  var fEl = document.getElementById('fout-dienst');
-  if (!gekozen) { if(fEl) fEl.classList.add('zichtbaar'); return false; }
-  if (fEl) fEl.classList.remove('zichtbaar');
-  return true;
-}
-
-function valideerStap4() {
-  var ok = true;
-  var naam = document.getElementById('naam');
-  if (!naam || naam.value.trim().length < 2) { setFout(naam,'fout-naam',true); ok=false; }
-  else { setFout(naam,'fout-naam',false); }
-  var tel = document.getElementById('telefoon');
-  var telV = tel ? tel.value.replace(/[\\s\\-().+]/g,'') : '';
-  if (!tel || telV.length < 9 || !/^\\d+$/.test(telV)) { setFout(tel,'fout-telefoon',true); ok=false; }
-  else { setFout(tel,'fout-telefoon',false); }
-  var email = document.getElementById('email');
-  if (!email || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email.value.trim())) { setFout(email,'fout-email',true); ok=false; }
-  else { setFout(email,'fout-email',false); }
-  var priv = document.getElementById('privacy');
-  var privF = document.getElementById('fout-privacy');
-  if (!priv || !priv.checked) { if(privF) privF.classList.add('zichtbaar'); ok=false; }
-  else { if(privF) privF.classList.remove('zichtbaar'); }
-  return ok;
-}
-
-function setFout(el, foutId, tonen) {
-  if (el) {
-    el.classList.toggle('fout', tonen);
-    if (tonen) el.setAttribute('aria-invalid','true');
-    else el.removeAttribute('aria-invalid');
-  }
-  var f = document.getElementById(foutId);
-  if (f) f.classList.toggle('zichtbaar', tonen);
-}
-
-/* Dienst selectie */
-function initDienstKaarten() {
-  document.querySelectorAll('.dienst-kaart input[type=radio]').forEach(function(radio){
-    radio.addEventListener('change', function(){
-      // Selectie styling
-      document.querySelectorAll('.dienst-kaart').forEach(function(k){ k.classList.remove('geselecteerd'); });
-      var label = radio.closest('.dienst-kaart');
-      if (label) label.classList.add('geselecteerd');
-      // Spoed melding
-      var m = document.getElementById('spoedMelding');
-      if (m) m.classList.toggle('verborgen', this.value !== 'storing');
-      // Onthoud gekozen dienst
-      gekozenDienst = this.value;
-    });
-  });
-}
-
-/* Toon juiste vragen op stap 3 */
-function initDienstVragen() {
-  // Luister op de volgende-knop van stap 2
-  var stap2 = document.getElementById('stap2');
-  if (!stap2) return;
-  var knop = stap2.querySelector('.btn-volgende');
-  if (!knop) return;
-  // Override onclick
-  knop.onclick = function(){
-    if (!valideer(2)) return;
-    // Toon juiste vragen sectie
-    document.querySelectorAll('.dienst-vragen').forEach(function(v){ v.classList.add('verborgen'); });
-    var vrGroup = document.getElementById('vragen-' + gekozenDienst);
-    if (vrGroup) vrGroup.classList.remove('verborgen');
-    // Zet stap 3 titel
-    var titel = document.getElementById('stap3Titel');
-    if (titel && dienstTitels[gekozenDienst]) titel.textContent = dienstTitels[gekozenDienst];
-    toon(3);
-  };
-}
-
-/* Radio knop styling */
-function initRadioKnoppen() {
-  document.querySelectorAll('.radio-knop input[type=radio]').forEach(function(radio){
-    radio.addEventListener('change', function(){
-      var groep = this.name;
-      document.querySelectorAll('input[name="'+groep+'"]').forEach(function(r){
-        var label = r.closest('.radio-knop');
-        if (label) label.classList.remove('geselecteerd');
-      });
-      var mijnLabel = this.closest('.radio-knop');
-      if (mijnLabel) mijnLabel.classList.add('geselecteerd');
-      // Spoed check bij storing
-      if (this.name === 'st_spoed') {
-        var m2 = document.getElementById('spoedMelding2');
-        if (m2) m2.style.display = this.value.indexOf('snel') !== -1 ? 'flex' : 'none';
-      }
-    });
-  });
-}
-
-/* Spoed melding stap 2 */
-function initSpoed() {
-  document.querySelectorAll('input[name=dienst]').forEach(function(r){
-    r.addEventListener('change', function(){
-      var m = document.getElementById('spoedMelding');
-      if (m) m.classList.toggle('verborgen', this.value !== 'storing');
-    });
-  });
-}
-
-/* FAQ */
-function initFAQ() {
-  document.querySelectorAll('.faq-vraag').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var open = this.getAttribute('aria-expanded') === 'true';
-      var antwoord = document.getElementById(this.getAttribute('aria-controls'));
-      document.querySelectorAll('.faq-vraag').forEach(function(b){
-        b.setAttribute('aria-expanded','false');
-        var a = document.getElementById(b.getAttribute('aria-controls'));
-        if(a) a.hidden = true;
-      });
-      if (!open) {
-        this.setAttribute('aria-expanded','true');
-        if (antwoord) antwoord.hidden = false;
-      }
-    });
-  });
-}
-
-/* Formulier submit */
-function initForm() {
-  var form = document.getElementById('aanvraagForm');
-  if (!form) return;
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    if (!valideer(4)) return;
-    verstuur();
-  });
-  ['naam','telefoon','email'].forEach(function(id){
-    var el = document.getElementById(id);
-    if (el) el.addEventListener('input', function(){ setFout(el,'fout-'+id,false); });
-  });
-  var priv = document.getElementById('privacy');
-  if (priv) priv.addEventListener('change', function(){ setFout(null,'fout-privacy',false); });
-  var pc = document.getElementById('postcode');
-  if (pc) pc.addEventListener('input', function(){ setFout(pc,'fout-postcode',false); });
-  var hnr = document.getElementById('huisnummer');
-  if (hnr) hnr.addEventListener('input', function(){ setFout(hnr,'fout-huisnummer',false); });
-}
-
-function verstuur() {
-  var btn = document.getElementById('submitBtn');
-  var t = document.getElementById('btnTekst');
-  var l = document.getElementById('btnLaad');
-  if (btn) btn.disabled = true;
-  if (t) t.classList.add('verborgen');
-  if (l) l.classList.remove('verborgen');
-  var form = document.getElementById('aanvraagForm');
-  fetch('https://formspree.io/f/xjgzdzww', {
-    method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}
-  }).then(function(r){
-    if (r.ok) { succes(); } else { mislukt(); resetBtn(btn,t,l); }
-  }).catch(function(){ mislukt(); resetBtn(btn,t,l); });
-}
-
-function succes() {
-  var form = document.getElementById('aanvraagForm');
-  var vg = document.querySelector('.voortgang');
-  var s = document.getElementById('formSucces');
-  if (form) form.classList.add('verborgen');
-  if (vg) vg.style.display = 'none';
-  if (s) { s.classList.remove('verborgen'); s.scrollIntoView({behavior:'smooth',block:'center'}); }
-}
-
-function mislukt() {
-  if (document.getElementById('submit-fout')) return;
-  var p = document.createElement('p');
-  p.id = 'submit-fout';
-  p.setAttribute('role','alert');
-  p.style.cssText = 'color:#dc2626;font-size:.85rem;font-weight:600;text-align:center;padding:11px;background:#fef2f2;border-radius:8px;border:1px solid #fecaca;margin-top:10px;';
-  p.textContent = 'Er is iets misgegaan. Probeer het opnieuw of bel ons direct.';
-  var btn = document.getElementById('submitBtn');
-  if (btn) btn.parentNode.insertBefore(p, btn.nextSibling);
-}
-
-function resetBtn(btn,t,l) {
-  if (btn) btn.disabled = false;
-  if (t) t.classList.remove('verborgen');
-  if (l) l.classList.add('verborgen');
-}
-
-function initCTA() {
-  var cta = document.getElementById('ctaKnop');
-  if (!cta) return;
-  cta.addEventListener('click', function(e){
-    e.preventDefault();
-    var kaart = document.getElementById('funnelKaart');
-    if (kaart) {
-      window.scrollTo({top: kaart.getBoundingClientRect().top + window.scrollY - 80, behavior:'smooth'});
-      setTimeout(function(){ var inp = document.getElementById('postcode'); if(inp) inp.focus(); }, 400);
-    }
-  });
-}
-
-function initJaar() {
-  var el = document.getElementById('jaar');
-  if (el) el.textContent = new Date().getFullYear();
-}
-
-document.addEventListener('DOMContentLoaded', function(){
-  toon(1);
-  initSpoed();
-  initDienstKaarten();
-  initDienstVragen();
-  initRadioKnoppen();
-  initFAQ();
-  initForm();
-  initCTA();
-  initJaar();
-});
-
-})();
-</script>
+  <script src="js/main.js"></script>
 </body>
 </html>
